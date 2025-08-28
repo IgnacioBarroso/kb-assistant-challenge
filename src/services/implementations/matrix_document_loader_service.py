@@ -23,40 +23,46 @@ class MatrixDocumentLoaderService(DocumentLoaderService):
         
         dict_documents = [doc.model_dump() for doc in base_documents]
 
-        # --- Agregamos la ubicación a los metadatos de cada línea ---
-        # Ahora, iteramos para asignar la ubicación correcta a cada línea de la escena.
+        # --- Lógica mejorada para identificar escenas únicas ---
+        # Un 'scene_id' único se genera cada vez que encontramos una nueva línea de 'location'.
+        # Esto evita que escenas distintas en la misma ubicación se fusionen.
+        scene_id = 0
         current_location = None
         for doc in dict_documents:
             if doc["metadata"]["text_type"] == "location":
                 current_location = doc["text"]
-            # Asignamos la ubicación a todas las líneas que pertenecen a una escena
+                scene_id += 1  # Nueva escena detectada
+            
             if current_location:
                 doc["metadata"]["location"] = current_location
+                doc["metadata"]["scene_id"] = scene_id
 
         # Filtramos las líneas que no pertenecen a ninguna escena y las propias líneas de ubicación
-        docs_with_location = [
+        docs_with_scene_id = [
             doc for doc in dict_documents 
-            if "location" in doc["metadata"] and doc["metadata"]["text_type"] != "location"
+            if "scene_id" in doc["metadata"] and doc["metadata"]["text_type"] != "location"
         ]
 
-        # Agrupamos por la ubicación que ahora sí existe en los metadatos.
+        # Agrupamos por el 'scene_id' único en lugar de por el nombre de la ubicación.
         # Es crucial ordenar antes de agrupar.
-        grouped_by_scene = groupby(sorted(docs_with_location, key=lambda d: d["metadata"]["location"]), 
-                                   key=lambda doc: doc["metadata"]["location"])
+        grouped_by_scene = groupby(sorted(docs_with_scene_id, key=lambda d: d["metadata"]["scene_id"]), 
+                                   key=lambda doc: doc["metadata"]["scene_id"])
         
         scene_chunks = []
-        scene_number = 1
-        for location, docs_in_scene_iter in grouped_by_scene:
+        for scene_id, docs_in_scene_iter in grouped_by_scene:
             docs_in_scene = list(docs_in_scene_iter)
+            # La ubicación es la misma para todos los documentos de una escena.
+            location = docs_in_scene[0]["metadata"]["location"]
+            
             scene_content = self._format_scene_content(docs_in_scene, location)
-            scene_metadata = self._aggregate_metadata(docs_in_scene, location, scene_number)
+            # Pasamos el scene_id como scene_number para que sea el número de escena real.
+            scene_metadata = self._aggregate_metadata(docs_in_scene, location, scene_id)
             
             scene_chunks.append({
                 "text": scene_content,
                 "page_content": scene_content,
                 "metadata": scene_metadata
             })
-            scene_number += 1
 
         self.logger.info(f"[Matrix RAG] {len(scene_chunks)} chunks basados en escenas generados.")
         return scene_chunks
