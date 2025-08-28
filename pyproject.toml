@@ -2,13 +2,13 @@
 requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
+
 [project]
-requires-python = ">=3.11"
-name = "kbac"
+requires-python = ">=3.12"
+name = "matrix-rag-api"
 dynamic = ["version", "dependencies"]
-description = "KB Assistant Challenge"
+description = "Matrix RAG API"
 readme = "README.md"
-authors = [{ name = "Bas", email = "bsilva@yoizen.com" }]
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
@@ -21,3 +21,6 @@ include = ["kbac"]
 dependencies = { file = ["requirements.txt"] }
 
 [tool.setuptools_scm]
+
+[tool.pytest.ini_options]
+pythonpath = "."
