@@ -1,129 +1,273 @@
-# KB Assistant Challenge
+# Matrix RAG API
 
-## Objective
+This project implements a modular and scalable Retrieval-Augmented Generation (RAG) system to answer complex questions about *The Matrix* script. It uses FastAPI for the API, Qdrant as the vector database, and OpenAI for embeddings and language models.
 
-Your task is to build a system that enables users to query contextual information from the script of the movie The Matrix. The system should retrieve relevant excerpts from the script and use them to help an AI agent generate accurate, context-aware responses.
+---
 
-You may use a Retrieval-Augmented Generation (RAG) approach, or any alternative design that effectively combines retrieval and generation to produce grounded answers. The focus is on building a solution that demonstrates strong retrieval capabilities and uses that context effectively in AI-driven responses.
-
-## Challenge Goals
-
-This challenge is divided into two parts:
-
--   Part 1 (Mandatory): Completing this part is required for your submission to be considered complete.
--   Part 2 (Optional but Recommended): This part is not required but will demonstrate deeper reasoning, richer retrieval, and more advanced capabilities.
-
-### Part 1 - Core Functionality (Mandatory)
-
-Your system must be able to answer basic factual queries based on the provided script of **The Matrix**.
-
-Example queries:
-
--   Under what circumstances does Neo see a white rabbit?
--   How did Trinity and Neo first meet?
--   Why is there no sunlight in the future?
--   Who needs solar power to survive?
--   Why do the Agents want to capture Morpheus?
--   Describe the Nebuchadnezzar.
--   What is Nebuchadnezzar's crew made up of?
-
-### Part 2 - Advanced Capabilities (Optional)
-
-This part evaluates your system's ability to handle complex, composed, and reasoning-based queries.
-
-Example queries:
-
--   How many times does Morpheus mention that Neo is the One?
--   Why are humans similar to a virus? And who says that?
--   Describe Cypher's personality.
--   What does Cypher offer to the Agents, and in exchange for what?
--   What is the purpose of the human fields, and who created them?
-
-#### Recommendations (Optional)
-
-To help you get started, here are some suggestions and prebuilt components available in this project. These are not required but may help you complete the challenge more efficiently and effectively:
-
--   **Script Loader**
-
-    A custom loader is provided to parse and load The Matrix script. You can use this loader as-is or modify it as needed.
-
-    See: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb)
-
--   **Retriever**
-
-    We recommend using a **Qdrant-based** retriever.
-
-    See: [notebooks/02-retriever/01-qdrant-retriever.ipynb](notebooks/02-retriever/01-qdrant-retriever.ipynb)
-
--   **LLM Agent**
-
-    For implementing the AI agent, we recommend using **Pydantic-AI**.
-
-    See: [notebooks/03-llm-agents/01-llm-agents.ipynb](notebooks/03-llm-agents/01-llm-agents.ipynb)
-
--   **Advanced Capability - MCP Server**
-
-    To handle advanced reasoning and agent orchestration, especially for the requirements in **Part 2** of this challenge, we recommend using an **MCP server**. The environment already includes **Pydantic-AI**, which has built-in support for the MCP protocol.
-
-    See: [https://ai.pydantic.dev/mcp/](https://ai.pydantic.dev/mcp/)
-
-#### System Evaluation
-
-As part of building a robust system, you should carefully consider:
-
--   **How will you evaluate the system?**
-
-    What metrics or criteria will you use to assess the quality and accuracy of the responses?
-
--   **How will you ensure the agent does not hallucinate or rely on prior knowledge of the movie?**
-
-    Your system should be designed to **only answer based on the retrieved context**, not the agent's pretrained knowledge.
-
-## Environment Setup
-
-_This setup is highly recommended but not obligatory. Work on the challenge using the environment of your preference._
+## Installation & Setup
 
 ### Prerequisites
 
--   Install Make:
+- Python 3.12+
+- Docker (for containerized setup)
+- Make
 
-    ```bash
-    sudo apt install make
-    ```
+First, install Make if you don't have it:
 
--   Install Docker following the official [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
+```bash
+# On Debian/Ubuntu
+sudo apt install make
+```
+
+Install Docker following the official [Docker installation guide](https://docs.docker.com/engine/install/ubuntu/).
+
+Clone the repository and enter the project folder:
+
+```bash
+git clone <REPO_URL>
+cd <REPO_NAME>
+```
+
+Create a `.env` file in the root with your OpenAI key:
+
+```env
+OPENAI_API_KEY=your_openai_key
+```
+
+(Optional) Adjust parameters in `src/settings/config.py` if needed (ports, model, etc).
+
+---
+
+## Usage
 
 ### Dev Container (Recommended)
 
-To ensure a consistent development environment, this project uses a preconfigured Dev Container.
+This project includes a reproducible, preconfigured development environment using Dev Container. All dependencies, extensions and settings are consistent and compatible with the current solution.
 
--   Open this repository in VS Code:
+1. Open the repository in VS Code:
+
     ```bash
     code .
     ```
--   After installing the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension, press F1 to open the Command Palette, type _Dev Containers_, and select: **Reopen in Container**
+2. Install the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension if you don't have it.
+3. Reopen the project in the container:
+    - Press `F1`, type `Dev Containers`, and select Reopen in Container.
+4. Wait for the container to build (first time may take a while; installs Python 3.12, dependencies, extensions and Oh My Zsh).
+5. You can now work, run notebooks and launch the API from the container.
 
-### Jupyter
+Open a terminal in VS Code (inside the container) and run:
 
+```bash
+uvicorn src.api.main:app --reload
+```
+
+To run the tests:
+
+```bash
+pytest
+```
+
+You can use notebooks, install new dependencies (edit `requirements.txt`) and everything will work reproducibly.
+
+#### Advantages
+
+- Python 3.12+ environment ready and isolated
+- VS Code dependencies and extensions preinstalled
+- Notebook and interactive development support
+- Configuration aligned with the solution and unified requirements
+
+### Docker Compose
+
+```bash
+make run-server
+# This starts the API and Qdrant in containers
+```
+
+### Local (requires Python 3.12+, Qdrant and dependencies installed)
+
+```bash
+pip install -r requirements.txt
+uvicorn src.api.main:app --reload
+```
+
+---
+
+## How it works
+
+When the API starts:
+
+- Loads and splits the PDF script (`resources/movie-scripts/the-matrix-1999.pdf`).
+- Indexes the chunks in Qdrant (only the first time).
+
+You can test the system from Swagger UI:
+
+- Open [http://localhost:8000/docs](http://localhost:8000/docs)
+- Use the POST `/ask` endpoint with a body like:
+
+    ```json
+    {
+        "query": "Why are humans similar to a virus? And who says that?",
+        "top_k": 8,
+        "attach_documents": true
+    }
+    ```
+
+- Or from the console with curl:
+
+    ```bash
+    curl -X POST "http://localhost:8000/ask" \
+        -H "Content-Type: application/json" \
+        -d '{"query": "How many times does Morpheus mention that Neo is the One?", "top_k": 10, "attach_documents": true}'
+    ```
+
+---
+
+## Running tests
+
+To run all tests (API and internal components):
+
+```bash
+pytest
+```
+
+This will execute both endpoint tests (`tests/api/`) and internal logic tests (`tests/core/`).
+
+To run only a specific suite:
+
+```bash
+pytest tests/api/
+pytest tests/core/
+```
+
+Make sure all dependencies are installed and the API is up before running tests.
+
+---
+
+## Internal RAG pipeline flow
+
+1. The user sends a question to the `/ask` endpoint.
+2. The system detects if the question is simple or complex (count, coverage, reasoning, etc).
+3. For count/coverage, it uses exhaustive retrieval (`keyword_search`); otherwise, semantic retrieval.
+4. The LLM orchestrator answers directly or decomposes and synthesizes the response as needed.
+5. Returns a structured response with:
+    - `answer`: generated answer
+    - `confidence`: confidence
+    - `sources_used`: used chunks
+    - `reasoning`: reasoning
+    - `retrieved_documents`: (optional) full chunks
+
+---
+
+## Key folders and files
+
+- `src/api/`
+    - `main.py`: exposes the FastAPI app
+    - `app.py`: initializes services and lifecycle
+    - `routers.py`: defines the `/ask` endpoint and uses the RAG pipeline
+    - `schemas.py`: Pydantic models for request/response
+- `src/services/`
+    - `document_loader_service.py`: loads and splits the PDF
+    - `qdrant_retriever_service.py`: indexes and retrieves chunks using Qdrant
+    - `rag_service.py`: orchestrates loader, retriever and LLM agent
+- `src/settings/config.py`: centralized configuration
+
+---
+
+## System capabilities
+
+- Automatically indexes The Matrix script in Qdrant on startup
+- Retrieves relevant context for any question using OpenAI embeddings
+- Orchestrates LLM agents for simple and complex queries:
+    - Decomposes complex questions into subqueries
+    - Synthesizes final answers with reasoning and sources
+- Returns structured answers with confidence, sources and reasoning
+- All configuration is centralized and secure
+---
+
+## Example usage of `/ask` endpoint
+
+Request:
+
+```json
+POST /ask
+{
+    "query": "Why are humans similar to a virus? And who says that?",
+    "top_k": 8,
+    "attach_documents": true
+}
+```
+
+Response:
+
+```json
+{
+    "query": "Why are humans similar to a virus? And who says that?",
+    "answer": "...generated by the LLM...",
+    "confidence": 0.92,
+    "sources_used": ["chunk_23", "chunk_45"],
+    "reasoning": "The answer is based on the chunks where Agent Smith compares humans to a virus...",
+    "retrieved_documents": [ ... ]
+}
+```
+
+---
+
+## Extensibility and best practices
+
+- Modular: each service is decoupled and testable
+- Security: sensitive keys and paths in `.env`
+- Scalable: easy to swap LLM model, retriever or loader
+- OpenAPI documentation generated automatically
+
+---
+
+## Limitations and considerations
+
+- The system depends on the quality of chunking and context coverage
+- Decomposition and synthesis of complex queries depends on LLM and prompt quality
+- If relevant context is not retrieved, the answer may be incomplete
+
+---
+
+## Current status and next steps
+
+- The pipeline is ready to answer complex, reasoned questions about the indexed script
+- Adjust chunking and retrieval to maximize relevant context coverage
+- Admin and monitoring endpoints can be added
+
+See: [notebooks/03-llm-agents/01-llm-agents.ipynb](notebooks/03-llm-agents/01-llm-agents.ipynb)
+### Advanced Capability - MCP Server
+For advanced reasoning and agent orchestration (see Part 2 requirements), use an MCP server. The environment includes Pydantic-AI with built-in MCP protocol support.
+See: [https://ai.pydantic.dev/mcp/](https://ai.pydantic.dev/mcp/)
+#### System evaluation
+
+## Jupyter
 Jupyter is preconfigured inside the Dev Container.
-You can explore examples in the [notebooks/](notebooks/) directory.
-When opening a notebook, select the appropriate kernel in the top-right corner: **Python Environments -> Python 3.12 (Global Env)**
+Explore examples in the [notebooks/](notebooks/) directory.
+When opening a notebook, select the kernel: Python Environments -> Python 3.12 (Global Env)
+---
 
-### Custom Python Library
+## Custom Python library
+A local Python package named kbac (KB Assistant Challenge) is included. It contains utility functions for the project. Extend this library as needed. Example usage: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb).
+After modifying this library, you don't need to rebuild the container, but restart the notebook if using it in Jupyter.
+---
 
-A local Python package named **kbac** (short for KB Assistant Challenge) is included in the environment. It contains utility functions to help you work with the project. You are encouraged to extend this library as needed. Example usage can be found in: [notebooks/01-loaders/01-matrix-script-loader.ipynb](notebooks/01-loaders/01-matrix-script-loader.ipynb). After you add to or modify this library, it is not necessary to rebuild the container. However, if you are using it in a Jupyter notebook, you should restart that notebook.
+## Python dependencies
+Install additional Python libraries by adding them to requirements.txt.
+Rebuild the container afterwards (F1 + Rebuild Container).
+---
 
-### Python Dependencies
-
-You can install additional Python libraries by adding them to the **requirements.txt**. You should rebuild the container afterward (F1 + Rebuild Container).
-
-### Environment Variables
-
-You can define environment variables (such as `OPENAI_API_KEY`) in a `.env` file placed at the root of the project. These variables will be automatically loaded into the environment inside the Dev Container.
-
-**Example `.env` file:**
-
+## Environment variables
+Define environment variables (such as OPENAI_API_KEY) in a .env file at the project root. These will be loaded automatically inside the Dev Container.
+Example .env file:
 ```env
 OPENAI_API_KEY=your-key-here
 MY_CUSTOM_VAR=some-value
 ```
+
+    Example .env file:
+
+    ```env
+    OPENAI_API_KEY=your-key-here
+    MY_CUSTOM_VAR=some-value
+    ```
