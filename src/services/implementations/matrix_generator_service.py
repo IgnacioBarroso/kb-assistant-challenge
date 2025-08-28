@@ -1,4 +1,5 @@
 import logging
+import asyncio
 from typing import Optional, List, Any
 
 from pydantic import BaseModel, Field
@@ -15,8 +16,13 @@ class FilteredContext(BaseModel):
 
 class QuantitativeAnalysis(BaseModel):
     """Modelo para la salida del agente de conteo."""
-    final_count: int = Field(description="The final total count of occurrences based on the evidence.")
-    evidence: List[str] = Field(default_factory=list, description="A list of direct quotes from the context that serve as evidence for the count.")
+    evidence: List[str] = Field(default_factory=list, description="A list of direct quotes from the context that serve as evidence for the user's counting query.")
+
+class QualitativeAnalysis(BaseModel):
+    """Modelo para la salida del agente cualitativo. Enfocado solo en el contenido."""
+    answer: str = Field(description="The synthesized, comprehensive answer to the user's query, based on the context.")
+    confidence: float = Field(ge=0.0, le=1.0, description="Confidence score reflecting how well the context supports the answer.")
+    reasoning: Optional[str] = Field(None, description="A brief explanation of how the answer was derived from the context.")
 
 class CountingExtraction(BaseModel):
     character: Optional[str] = Field(None, description="The character speaking or mentioned, if any.")
@@ -43,7 +49,7 @@ class MatrixGeneratorService(GeneratorService):
 
         self.advanced_agent = Agent(
             model_name,
-            output_type=MatrixResponse,
+            output_type=QualitativeAnalysis,
             system_prompt=self._get_advanced_system_prompt()
         )
         
@@ -78,9 +84,18 @@ class MatrixGeneratorService(GeneratorService):
         if not context:
             return MatrixResponse(query=query, answer="I could not find any relevant context to answer this question.", confidence=0.0)
 
+        # 1. Usar el agente cualitativo para obtener el análisis de contenido
         prompt = f"User Query: {query}\n\nScript Context:\n{self._format_context(context)}"
         result = await self.advanced_agent.run(prompt)
-        return result.output
+        analysis_output = result.output
+
+        # 2. Construir el objeto MatrixResponse final en Python (más robusto)
+        return MatrixResponse(
+            query=query,
+            answer=analysis_output.answer,
+            confidence=analysis_output.confidence,
+            reasoning=analysis_output.reasoning
+        )
 
     async def _handle_quantitative_query(self, query: str, context: List[Document]) -> MatrixResponse:
         if not context:
@@ -91,17 +106,38 @@ class MatrixGeneratorService(GeneratorService):
                 reasoning="The retrieval step did not return any documents matching the extracted entities."
             )
 
-        prompt = f"User Query: '{query}'\n\nScript Context:\n{self._format_context(context)}"
-        
-        # 1. Usar el agente de conteo para obtener datos estructurados
-        analysis_result = await self.counting_agent.run(prompt)
-        analysis_output = analysis_result.output
+        # --- ESTRATEGIA DE CONTEO MEJORADA: MAP-REDUCE ---
+        # En lugar de enviar todo el contexto de una vez (lo que puede abrumar al LLM),
+        # creamos una tarea de conteo para cada documento recuperado y luego agregamos los resultados.
+        # Esto es mucho más preciso para tareas de alta recordación como el conteo.
 
-        # 2. Construir la respuesta para el usuario en Python (más robusto)
-        if analysis_output.final_count > 0:
-            evidence_list = "\n".join(f"- \"{e}\"" for e in analysis_output.evidence)
+        # 1. Crear una tarea de análisis para cada documento (Map)
+        tasks = []
+        for doc in context:
+            # El prompt ahora es específico para un solo documento, más fácil de procesar para el LLM
+            single_doc_prompt = f"User Query: '{query}'\n\nScript Context:\n{self._format_context([doc])}"
+            tasks.append(self.counting_agent.run(single_doc_prompt))
+
+        # 2. Ejecutar todas las tareas en paralelo y recopilar resultados
+        analysis_results = await asyncio.gather(*tasks)
+
+        # 3. Agregar los resultados (Reduce)
+        all_evidence = []
+        for result in analysis_results:
+            # La salida del agente ahora es solo una lista de evidencias
+            if result and result.output and hasattr(result.output, 'evidence'):
+                all_evidence.extend(result.output.evidence)
+
+        # 4. Contar y deduplicar la evidencia en Python (mucho más robusto)
+        # Se eliminan duplicados por si el LLM extrae la misma frase de contextos ligeramente diferentes
+        unique_evidence = sorted(list(set(all_evidence)), key=all_evidence.index)
+        total_count = len(unique_evidence)
+
+        # 5. Construir la respuesta final a partir de los datos agregados
+        if total_count > 0:
+            evidence_list = "\n".join(f"- \"{e}\"" for e in unique_evidence)
             answer = (
-                f"Based on the provided context, the final count is {analysis_output.final_count}. Here is the evidence:\n"
+                f"Based on the provided context, the final count is {total_count}. Here is the evidence:\n"
                 f"{evidence_list}"
             )
         else:
@@ -109,7 +145,7 @@ class MatrixGeneratorService(GeneratorService):
 
         reasoning = f"A specialized counting agent analyzed {len(context)} pre-filtered script scenes to find the occurrences."
 
-        # 3. Construir y devolver el objeto MatrixResponse final
+        # 6. Construir y devolver el objeto MatrixResponse final
         return MatrixResponse(
             query=query,
             answer=answer,
@@ -145,27 +181,26 @@ class MatrixGeneratorService(GeneratorService):
 
     def _get_advanced_system_prompt(self) -> str:
         """Prompt para el agente que responde preguntas cualitativas."""
-        return """You are a world-class expert on the script of 'The Matrix'. Your task is to answer questions with depth and insight, based ONLY on the provided script context.
+        return """You are a world-class expert on the script of 'The Matrix'. Your task is to answer questions with depth and insight, based ONLY on the provided script context. You must populate the `QualitativeAnalysis` model.
 
 **CRITICAL RULES:**
 1.  **Strictly Contextual:** Your entire response must be derived solely from the provided script excerpts. Do not use any external knowledge.
 2.  **Cite Evidence:** Weave quotes or specific descriptions from the context directly into your answer to support your claims.
 3.  **Synthesize:** If multiple documents are provided, synthesize them into a coherent, well-written answer.
 4.  **Handle Insufficient Context:** If the context is not sufficient, you MUST state that clearly. For example: "Based on the provided context, there is no information about X."
-5.  **Schema Adherence:** You MUST populate all fields of the `MatrixResponse` model. The `answer` should be a complete paragraph. The `reasoning` should explain your conclusion. The `confidence` score (from 0.0 to 1.0) is ALWAYS REQUIRED and reflects how well the context supports your answer.
+5.  **Schema Adherence:** You MUST populate all fields of the `QualitativeAnalysis` model. The `confidence` score is ALWAYS REQUIRED. The `reasoning` should explain your conclusion.
 """
 
     def _get_quantitative_analysis_prompt(self) -> str:
         """Prompt para el agente que solo cuenta y extrae evidencia."""
-        return """You are a meticulous and precise counting machine. Your ONLY purpose is to analyze the provided script excerpts and count occurrences based on the user's query.
+        return """You are a meticulous and precise evidence-gathering machine. Your ONLY purpose is to analyze the provided script excerpt and extract evidence related to the user's query.
 
 **OPERATIONAL DIRECTIVES:**
-1.  **Identify Target:** Read the user query to understand exactly what to count.
+1.  **Identify Target:** Read the user query to understand exactly what to find.
 2.  **Scan Context:** Scrutinize the provided script context to find every single instance of the target.
 3.  **Extract Evidence:** For each instance found, extract the exact sentence as a direct quote.
-4.  **Final Count:** Calculate the total number of instances found.
-5.  **Populate Schema:** You MUST populate the `QuantitativeAnalysis` model.
+4.  **Populate Schema:** You MUST populate the `QuantitativeAnalysis` model.
     - `evidence`: A list containing all the direct quotes you found.
-    - `final_count`: The total number of items in the evidence list.
-6.  **Handle Zero Occurrences:** If no instances are found, return `final_count: 0` and an empty `evidence` list.
+5.  **Handle Zero Occurrences:** If no instances are found, return an empty `evidence` list.
+6.  **DO NOT COUNT:** Do not provide a final count or any summary. Just extract the evidence sentences into the list.
 """
