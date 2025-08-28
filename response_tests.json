@@ -2,17 +2,15 @@
   {
     "question": "How many times does Morpheus mention that Neo is the One?",
     "response": {
-      "query": "Morpheus mention that Neo is the One",
-      "answer": "",
-      "confidence": 0.5,
+      "query": "How many times does Morpheus mention that Neo is the One?",
+      "answer": "Based on the provided context, the final count is 3. Here is the evidence:\n- \"MORPHEUS: Yes I do.\"\n- \"MORPHEUS: You are the sixth and the last.  You are the One.\"\n- \"MORPHEUS: And then I saw you, Neo, and my world changed.  You can call it an epiphany, you can call it whatever the hell you want.  It doesn't matter.  It's not about a word.  It's about this.\"",
+      "confidence": 1.0,
       "sources_used": [
         "Scene 51: INT. HALL",
         "Scene 77: INT. ROOM 1313",
-        "Scene 70: INT. NEO'S ROOM",
-        "Scene 59: INT. HOVERCRAFT",
-        "Scene 9: EXT. CITY STREET - TRAINING PROGRAM - DAY"
+        "Scene 70: INT. NEO'S ROOM"
       ],
-      "reasoning": "A specialized counting agent analyzed 5 pre-filtered script scenes to find the occurrences.",
+      "reasoning": "A specialized counting agent analyzed 3 pre-filtered script scenes to find the occurrences.",
       "retrieved_documents": [
         {
           "id": "8fe8e894-58e9-4622-9d03-01ecf249801f",
@@ -52,7 +50,7 @@
           }
         },
         {
-          "id": "005ddf11-581d-44d5-b0fb-a0607012ed55",
+          "id": "9549901e-79c4-4dc2-afa4-49b14d52938a",
           "page_content": "Location: INT. NEO'S ROOM\nScene description: Neo wakes up from a deep sleep, feeling better.  He begins\nScene description: to examine himself.  There is a futuristic IV plugged into\nScene description: the jack in his forearm.  He pulls it out, staring at the\nScene description: grafted outlet.\nScene description: He runs his hand over the short hair now covering his\nScene description: head.  His fingers find and explore the large outlet in\nScene description: the base of his skull.\nScene description: Just as he starts to come unglued, Morpheus opens the\nScene description: door.\nNEO: Morpheus, what's happened to me?\nNEO: What is this place?\nMORPHEUS: More important than what is when?\nNEO: When?\nMORPHEUS: You believe the year is 1997 when\nMORPHEUS: in fact it is much closer to 2197.\nMORPHEUS: I can't say for certain what year\nMORPHEUS: it is because we honestly do not\nMORPHEUS: know.\nScene description: The wind is knocked from Neo's chest.\nMORPHEUS: There is no reason for me to try\nMORPHEUS: to explain it when I can simply\nMORPHEUS: show it.  Come with me.\nScene description: He blinks, regaining consciousness.  The room is dark.\nScene description: Neo is stretched out on his bed.\nNEO: I can't go back, can I?\nScene description: Morpheus is sitting like a shadow on a chair in the far\nScene description: corner.\nMORPHEUS: No.  But if you could, would you\nMORPHEUS: really want to?\nScene description: Deep down, Neo knows that answer.\nMORPHEUS: I feel that I owe you an apology.\nMORPHEUS: There is a rule that we do not\nMORPHEUS: free a mind once it reaches a\nMORPHEUS: certain age.  It is dangerous.\nMORPHEUS: They have trouble letting go.\nMORPHEUS: Their mind turns against them.\nMORPHEUS: I've seen it happen.  I'm sorry.\nMORPHEUS: I broke the rule because I had to.\nScene description: He stares into the darkness, confessing as much to\nScene description: himself as to Neo.\nMORPHEUS: When the Matrix was first built\nMORPHEUS: there was a man born inside that\nMORPHEUS: had the ability to change what he\nMORPHEUS: wanted, to remake the Matrix as he\nMORPHEUS: saw fit.  It was this man that\nMORPHEUS: freed the first of us and taught\nMORPHEUS: us the truth; as long as the\nMORPHEUS: Matrix exists, the human race will\nMORPHEUS: never be free.\nScene description: He pauses.\nScene description: 44.\nMORPHEUS: When he died, the Oracle\nMORPHEUS: prophesied his return and\nMORPHEUS: envisioned that his coming would\nMORPHEUS: hail the destruction of the\nMORPHEUS: Matrix, an end to the war and\nMORPHEUS: freedom for our people.  That is\nMORPHEUS: why there are those of us that\nMORPHEUS: have spent our entire lives\nMORPHEUS: searching the Matrix, looking for\nMORPHEUS: him.\nScene description: Neo can feel his eyes on him.\nMORPHEUS: I did what I did because I believe\nMORPHEUS: the search is over.\nScene description: He stands up.\nMORPHEUS: Get some rest.  You're going to\nMORPHEUS: need it.\nNEO: For what?\nMORPHEUS: Your training.\nScene description: Neo is awake in his bed, staring up at the lights.  The\nScene description: door opens and TANK steps inside.\nTANK: Morning.  Did you sleep?\nNEO: No.\nTANK: You will tonight.  I guarantee it.\nTANK: I'm Tank.  I'll be your operator.\nScene description: He offers his hand and Neo shakes it.  He notices that\nScene description: Tank doesn't have any jacks.\nScene description: 45.\nNEO: You don't have...\nTANK: Any holes?  Nope.  Me and my\nTANK: brother Dozer, we are one\nTANK: hundred percent pure, old-\nTANK: fashioned, home-grown human.\nTANK: Born free.  Right here in the\nTANK: real world.  Genuine child\nTANK: of Zion.\nNEO: Zion?\nTANK: If this war ended tomorrow, Zion\nTANK: is where the party would be.\nNEO: It's a city?\nTANK: The last human city.  The only\nTANK: place we got left.\nNEO: Where is it?\nTANK: Deep underground.  Near the\nTANK: earth's core, where it's still\nTANK: warm.  You live long enough, you\nTANK: might even see it.\nTANK: (he smiles)\nTANK: Goddamn, I got to tell you, I'm\nTANK: fairly excited to see what you are\nTANK: capable of.  I mean if Morpheus is\nTANK: right and all.  We're not supposed\nTANK: to talk about any of that but if\nTANK: you are, well then this is an\nTANK: exciting time.  We got a lot to do\nTANK: so let's get to it.\nScene description: Trinity enters from the hall, carrying a tray of food.\nTRINITY: Neo, I saved you some dinner --\nScene description: She sees him passed out on the bed.  She sets the tray\nScene description: down and pulls the blanket over him.\nScene description: She pauses, her face close to his, then inhales lightly,\nScene description: breathing in the scent of him before slowly pulling away.",
           "metadata": {
             "scene_number": 70,
@@ -65,46 +63,9 @@
             ],
             "page_start": 36,
             "page_end": 52,
-            "_id": "005ddf11-581d-44d5-b0fb-a0607012ed55",
+            "_id": "9549901e-79c4-4dc2-afa4-49b14d52938a",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "005ddf11-581d-44d5-b0fb-a0607012ed55"
-          }
-        },
-        {
-          "id": "f78137bf-0c04-4660-8c85-a254327ca1bf",
-          "page_content": "Location: INT. HOVERCRAFT\nScene description: The metal harness opens and drops the half-conscious Neo\nScene description: onto the floor.  Human hands and arms help him up as he\nScene description: finds himself looking straight at Morpheus.\nScene description: He smiles.\nMORPHEUS: Welcome to the real world, Neo.\nScene description: Neo passes out.\nScene description: We have no sense of time.  We hear voices whispering.\nMORPHEUS: We've done it, Trinity.  We found\nMORPHEUS: him.\nTRINITY: I hope you're right.\nMORPHEUS: I don't have to hope it.  I know\nMORPHEUS: it.\nScene description: Neo's eyes flutter open.  We see Morpheus' face above us,\nScene description: angelic in the fluorescent glow of a light stick.\nNEO: ... am I dead?\nMORPHEUS: Far from it.\nScene description: Like a sleepwalker, Neo follows Morpheus through the\nScene description: ship.\nMORPHEUS: This is my ship, the\nMORPHEUS: Nebuchadnezzar.  It's a\nMORPHEUS: hovercraft.\nMORPHEUS: Small like a submarine.  It's\nMORPHEUS: cramped and cold.  But it's home.\nScene description: They climb a ladder up to the main deck.\nScene description: There is no morning; there is only darkness and then the\nScene description: fluorescent light sticks flicker on.\nScene description: Apoc and Switch exchange looks as Tank grabs for the\nScene description: disk.\nScene description: Tank is back at the controls.\nTANK: Operator.\nTRINITY: Tank, I need a pilot program for a\nTRINITY: military B-212 helicopter.\nScene description: Tank is immediately searching the disk drawers.\nTRINITY: Hurry!\nScene description: His fingers flash over the gleaming laser disks, finding\nScene description: one that he feeds into Trinity's supplement drive,\nScene description: punching the \"load\" commands on her keyboard.\nScene description: Trinity blinks, shivering as her conscious exits the\nScene description: Construct.\nTRINITY: Neo!\nTANK: What the hell just happened?\nTRINITY: An Agent!  You have to send me\nTRINITY: back!\nTANK: I can't!\nScene description: Trinity watches Neo as his body jerks, mouth coughing\nScene description: blood, his life signs going wild.\nTRINITY: Jesus, he's killing him!\nScene description: Tank searches the Matrix.\nTRINITY: What just happened?\nTANK: I don't know.  I lost him.\nMORPHEUS: He's on the run/nobreakspace--\nScene description: Suddenly, a SIREN SOUNDS.\nTANK: Oh shit!\nScene description: Morpheus bolts to the ladder.\nScene description: Tank answers.\nTANK: Operator.\nNEO: Mr. Wizard, get me the hell out of\nNEO: here!\nScene description: The KEYBOARD is CLICKING, Tank searches for an exit.\nScene description: Trinity screams into the headset.\nTRINITY: Neo, you better get your ass back\nTRINITY: here!\nScene description: Tank loads the exit.\nTANK: I'm going to make the call.\nMORPHEUS: Do it!\nScene description: Suddenly, the lights go red.\nTRINITY: No.\nScene description: Morpheus looks up.\nMORPHEUS: Here they come.\nScene description: The hovercraft booms down as they hit.  Morpheus opens\nScene description: the lock on the EMP detonator.\nScene description: Trinity watches him.\nMORPHEUS: He's going to make it.\nScene description: In the still darkness, only the humans are alive.\nTRINITY: Neo?\nScene description: His eyes open.  Tears pour from her smiling eyes as he\nScene description: reaches up to touch her.\nScene description: And she kisses him; it seems like it might last forever.",
-          "metadata": {
-            "scene_number": 59,
-            "location": "INT. HOVERCRAFT",
-            "characters": [
-              "MORPHEUS",
-              "NEO",
-              "TANK",
-              "TRINITY"
-            ],
-            "page_start": 34,
-            "page_end": 129,
-            "_id": "f78137bf-0c04-4660-8c85-a254327ca1bf",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "f78137bf-0c04-4660-8c85-a254327ca1bf"
-          }
-        },
-        {
-          "id": "683b3e90-01ba-4e71-96f2-2f1977c2279f",
-          "page_content": "Location: EXT. CITY STREET - TRAINING PROGRAM - DAY\nScene description: Morpheus moves effortlessly through a crowded downtown\nScene description: street while Neo struggles to keep up, constantly bumped\nScene description: and shouldered off the path.\nMORPHEUS: The Matrix is a system, Neo, and\nMORPHEUS: that system is our enemy.  But\nMORPHEUS: when you are inside and you look\nMORPHEUS: around, what do you see;\nMORPHEUS: businessmen, lawyers, teachers,\nMORPHEUS: carpenters.  The minds of the very\nMORPHEUS: people we are trying to save.  But\nMORPHEUS: until we do, these people are\nMORPHEUS: still a part of the system and\nMORPHEUS: that makes them our enemy.\nScene description: A cop writing a parking ticket stares at Neo from behind\nScene description: his sunglasses.\nMORPHEUS: You have to understand that most\nMORPHEUS: of these people are not ready to\nMORPHEUS: be unplugged and many of them are\nMORPHEUS: so inured, so hopelessly dependent\nMORPHEUS: on the system that they will fight\nMORPHEUS: to protect it.\nScene description: A beautiful woman in a red dress smiles at Neo as she\nScene description: passes by.\nMORPHEUS: Were you listening to me, Neo?  Or\nMORPHEUS: were you looking at the woman in\nMORPHEUS: the red dress?\nNEO: I was...\nScene description: 54.\nMORPHEUS: Look again.\nScene description: Neo turns just as Agent Smith levels a gun at his face.\nScene description: Neo screams.\nMORPHEUS: Freeze it.\nScene description: Everything except Morpheus and Neo freezes.\nNEO: This -- this isn't the Matrix?\nMORPHEUS: No, it's another training program\nMORPHEUS: designed to teach you one thing;\nMORPHEUS: if you are not one of us, you're\nMORPHEUS: one of them.\nNEO: What are they?\nMORPHEUS: Sentient programs.  They can move\nMORPHEUS: in and out of any software still\nMORPHEUS: hardwired to their system.  That\nMORPHEUS: means that anyone that we haven't\nMORPHEUS: unplugged is potentially an Agent.\nMORPHEUS: Inside the Matrix, they are\nMORPHEUS: everyone and they are no one.\nScene description: Neo stares at the Agent.\nMORPHEUS: We've survived by hiding from\nMORPHEUS: them, running from them, but they\nMORPHEUS: are the gatekeepers, they're\nMORPHEUS: guarding all the doors, holding\nMORPHEUS: all the keys, which means that\nMORPHEUS: sooner or later someone is going\nMORPHEUS: to have to fight them.\nNEO: Someone?\nMORPHEUS: I won't lie to you, Neo.  Every\nMORPHEUS: single man or woman who has stood\nMORPHEUS: their ground, who has fought an\nMORPHEUS: Agent, has died.  But where they\nMORPHEUS: failed, you will succeed.\nNEO: Why?\nMORPHEUS: I've seen an Agent punch through a\nMORPHEUS: concrete wall.  Men have emptied\nMORPHEUS: entire clips at them and hit\nMORPHEUS: nothing but air.  Yet their\nMORPHEUS: strength and their speed are still\nMORPHEUS: based on a world that is built by\nMORPHEUS: rules.  Because of that they will\nMORPHEUS: never be as strong or as fast as\nMORPHEUS: you can be.\nScene description: Neo scratches his head.\nNEO: What?  Are you trying to tell me\nNEO: that I can dodge bullets?\nMORPHEUS: No, Neo.  I'm trying to tell you\nMORPHEUS: that when you're ready, you won't\nMORPHEUS: have to.\nScene description: Morpheus' cell PHONE RINGS and he flips it open.\nTANK: We got trouble.",
-          "metadata": {
-            "scene_number": 9,
-            "location": "EXT. CITY STREET - TRAINING PROGRAM - DAY",
-            "characters": [
-              "MORPHEUS",
-              "NEO",
-              "TANK"
-            ],
-            "page_start": 53,
-            "page_end": 55,
-            "_id": "683b3e90-01ba-4e71-96f2-2f1977c2279f",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "683b3e90-01ba-4e71-96f2-2f1977c2279f"
+            "qdrant_id": "9549901e-79c4-4dc2-afa4-49b14d52938a"
           }
         }
       ]
@@ -114,19 +75,17 @@
     "question": "Why are humans similar to a virus? And who says that?",
     "response": {
       "query": "Why are humans similar to a virus? And who says that?",
-      "answer": "The script does not explicitly state that humans are similar to a virus or attribute this comparison to any particular character or authority within the provided scenes. However, it does contain metaphoric descriptions of humans being grown and used as resources by the Machines, such as in the scenes set in the Fetus Fields and the Power Plant, where humans are depicted as fields of crops or being liquefied and fed intravenously. These images imply that humans are like resources exploited by a system or machinery, which can be metaphorically likened to a virus that spreads or parasitizes its host. The analogy of humans to a virus is not directly quoted or explicitly stated, but the imagery aligns with the idea of humans as a resource or a form of life that is exploited for the system's purposes.",
-      "confidence": 0.7,
+      "answer": "In the provided script, lines of dialogue and descriptions emphasize the similarity between humans and a virus through Agent Smith's metaphor. Smith explicitly states, 'Never send a human to do a machine's job,' implying humans are akin to destructive or invasive entities like viruses that infiltrate systems. Additionally, Smith's statement, 'You are going to help us, Mr. Anderson, whether you want to or not,' along with the imagery of Neo being forcibly connected to a creature that 'resembles a hybrid of an insect and a fluke worm' that 'burrows' inside him, further suggests humans are being likened to a parasitic or infectious organism. Smith's perspective, as an antagonist representing the system, is the one expressing this view that humans are similar to viruses, highlighting their invasive, uncontrolled, and destructive tendencies within the system.",
+      "confidence": 0.9,
       "sources_used": [
         "Scene 61: INT. INTERROGATION ROOM",
         "Scene 49: INT. GOVERNMENT BUILDING",
-        "Scene 9: EXT. CITY STREET - TRAINING PROGRAM - DAY",
-        "Scene 11: EXT. FETUS FIELDS",
-        "Scene 74: INT. POWER PLANT"
+        "Scene 9: EXT. CITY STREET - TRAINING PROGRAM - DAY"
       ],
-      "reasoning": "The answer was synthesized from 5 documents retrieved via a qualitative search strategy.",
+      "reasoning": "The answer was synthesized from 3 documents retrieved via a qualitative search strategy.",
       "retrieved_documents": [
         {
-          "id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c",
+          "id": "6581c519-21e2-4f86-b499-6f229b56770f",
           "page_content": "Location: INT. INTERROGATION ROOM\nScene description: CLOSE ON a camera monitor; a wide angle view of a white\nScene description: room where Neo is sitting at a table alone.  We MOVE INTO\nScene description: the monitor, entering the room as if the monitor was a\nScene description: window.\nScene description: At the same moment, the door opens and the Agents enter.\nScene description: Agent Smith sits down across from Neo.  A thick manila\nScene description: envelope slaps down on the table.  The name on the file:\nScene description: \"Anderson, Thomas/nobreakspaceA.\"\nAGENT SMITH: As you can see, we've had our eye\nAGENT SMITH: on you for some time now, Mr.\nAGENT SMITH: Anderson.\nScene description: He opens the file.  Paper rattle marks the silence as he\nScene description: flips several pages.  Neo cannot tell if he is looking at\nScene description: the file or at him.\nAGENT SMITH: It seems that you have been living\nAGENT SMITH: two lives.  In one life, you are\nAGENT SMITH: Thomas A. Anderson, program writer\nAGENT SMITH: for a respectable software\nAGENT SMITH: company.  You have a social\nAGENT SMITH: security number, you pay your\nAGENT SMITH: taxes and you help your landlady\nAGENT SMITH: carry out her garbage.\nScene description: The pages continue to turn.\nAGENT SMITH: The other life is lived in\nAGENT SMITH: computers where you go by the\nAGENT SMITH: hacker alias Neo, and are guilty\nAGENT SMITH: of virtually every computer crime\nAGENT SMITH: we have a law for.\nScene description: Neo feels himself sinking into a pit of shit.\nAGENT SMITH: One of these lives has a future.\nAGENT SMITH: One of them does not.\nScene description: He closes the file.\nAGENT SMITH: I'm going to be as forthcoming as\nAGENT SMITH: I can be, Mr. Anderson.  You are\nAGENT SMITH: here because we need your help.\nScene description: He removes his sunglasses, his eyes are an unnatural ice-\nScene description: blue.\nAGENT SMITH: We know that you have been\nAGENT SMITH: contacted by a certain individual.\nAGENT SMITH: A man who calls himself Morpheus.\nAGENT SMITH: Whatever you think you know about\nAGENT SMITH: this man is irrelevant.  The fact\nAGENT SMITH: is that he is wanted for acts of\nAGENT SMITH: terrorism in more countries than\nAGENT SMITH: any other man in the world.\nScene description: 21.\nAGENT SMITH: He is considered by many\nAGENT SMITH: authorities to be the most\nAGENT SMITH: dangerous man alive.\nScene description: He leans closer.\nAGENT SMITH: My colleagues believe that I am\nAGENT SMITH: wasting my time with you but I\nAGENT SMITH: believe you want to do the right\nAGENT SMITH: thing.  It is obvious that you are\nAGENT SMITH: an intelligent man, Mr. Anderson,\nAGENT SMITH: and that you are interested in the\nAGENT SMITH: future.  That is why I believe you\nAGENT SMITH: are ready to put your past\nAGENT SMITH: mistakes behind you and get on\nAGENT SMITH: with your life.\nScene description: Neo tries to match his stare.\nAGENT SMITH: We are willing to wipe the slate\nAGENT SMITH: clean, to give you a fresh start\nAGENT SMITH: and all we are asking in return is\nAGENT SMITH: your cooperation in bringing a\nAGENT SMITH: known terrorist to justice.\nScene description: Neo nods to himself.\nNEO: Yeah.  Wow.  That sounds like a\nNEO: real good deal.  But I think I\nNEO: have a better one.  How about I\nNEO: just give you the finger --\nScene description: He does.\nNEO: And you give me my phone call!\nScene description: Agent Smith puts his glasses back on.\nAGENT SMITH: You disappoint me, Mr. Anderson.\nNEO: You can't scare me with this\nNEO: Gestapo crap.  I know my rights.\nNEO: I want my phone call!\nScene description: Agent Smith smiles.\nScene description: 22.\nAGENT SMITH: And tell me, Mr. Anderson, what\nAGENT SMITH: good is a phone call if you are\nAGENT SMITH: unable to speak?\nScene description: The question unnerves Neo and strangely he begins to feel\nScene description: the muscles in his jaw tighten.  The standing Agents\nScene description: snicker, watching Neo's confusion grow into panic.\nScene description: Neo feels his lips grow soft and sticky as they slowly\nScene description: seal shut, melding into each other until all traces of\nScene description: his mouth are gone.\nScene description: Wild with fear, he lunges for the door but the Agents\nScene description: restrain him, holding him in the chair.\nAGENT SMITH: You are going to help us, Mr.\nAGENT SMITH: Anderson, whether you want to or\nAGENT SMITH: not.\nScene description: Smith nods and the other two rip open his shirt.  From a\nScene description: case taken out of his suit coat, Smith removes a long,\nScene description: fiber-optic wire tap.\nScene description: Neo struggles helplessly as Smith dangles the wire over\nScene description: his exposed abdomen.  Horrified, he watches as the\nScene description: electronic device animates, becoming an organic creature\nScene description: that resembles a hybrid of an insect and a fluke worm.\nScene description: Thin, whisker-like tendrils reach out and probe into\nScene description: Neo's navel.  He bucks wildly as Smith drops the creature\nScene description: which looks for a moment like an uncut umbilical cord --\nScene description: -- before it begins to burrow, its tail thrashing as it\nScene description: worms its way inside.",
           "metadata": {
             "scene_number": 61,
@@ -137,13 +96,13 @@
             ],
             "page_start": 19,
             "page_end": 22,
-            "_id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c",
+            "_id": "6581c519-21e2-4f86-b499-6f229b56770f",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c"
+            "qdrant_id": "6581c519-21e2-4f86-b499-6f229b56770f"
           }
         },
         {
-          "id": "85919fbe-3cff-4ee6-bdb8-e9888ee09a22",
+          "id": "423f7a98-8f06-4d5c-84bb-7cdced96356e",
           "page_content": "Location: INT. GOVERNMENT BUILDING\nScene description: Morpheus is fighting to hold his mind together.  The\nScene description: Agents stand over him.\nScene description: 94.\nAGENT SMITH: Never send a human to do a\nAGENT SMITH: machine's job.\nAGENT BROWN: If, indeed, the insider has\nAGENT BROWN: failed, they will sever the\nAGENT BROWN: connection as soon as possible,\nAGENT BROWN: unless --\nAGENT JONES: They are dead.  In either case --\nAGENT SMITH: We have no choice but to continue\nAGENT SMITH: as planned.  Deploy the sentinels.\nAGENT SMITH: Immediately.",
           "metadata": {
             "scene_number": 49,
@@ -155,13 +114,13 @@
             ],
             "page_start": 97,
             "page_end": 98,
-            "_id": "85919fbe-3cff-4ee6-bdb8-e9888ee09a22",
+            "_id": "423f7a98-8f06-4d5c-84bb-7cdced96356e",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "85919fbe-3cff-4ee6-bdb8-e9888ee09a22"
+            "qdrant_id": "423f7a98-8f06-4d5c-84bb-7cdced96356e"
           }
         },
         {
-          "id": "f640852b-7afe-4adb-a319-5525027b8923",
+          "id": "f0ff5bce-16e4-478a-a994-2d2969edb360",
           "page_content": "Location: EXT. CITY STREET - TRAINING PROGRAM - DAY\nScene description: Morpheus moves effortlessly through a crowded downtown\nScene description: street while Neo struggles to keep up, constantly bumped\nScene description: and shouldered off the path.\nMORPHEUS: The Matrix is a system, Neo, and\nMORPHEUS: that system is our enemy.  But\nMORPHEUS: when you are inside and you look\nMORPHEUS: around, what do you see;\nMORPHEUS: businessmen, lawyers, teachers,\nMORPHEUS: carpenters.  The minds of the very\nMORPHEUS: people we are trying to save.  But\nMORPHEUS: until we do, these people are\nMORPHEUS: still a part of the system and\nMORPHEUS: that makes them our enemy.\nScene description: A cop writing a parking ticket stares at Neo from behind\nScene description: his sunglasses.\nMORPHEUS: You have to understand that most\nMORPHEUS: of these people are not ready to\nMORPHEUS: be unplugged and many of them are\nMORPHEUS: so inured, so hopelessly dependent\nMORPHEUS: on the system that they will fight\nMORPHEUS: to protect it.\nScene description: A beautiful woman in a red dress smiles at Neo as she\nScene description: passes by.\nMORPHEUS: Were you listening to me, Neo?  Or\nMORPHEUS: were you looking at the woman in\nMORPHEUS: the red dress?\nNEO: I was...\nScene description: 54.\nMORPHEUS: Look again.\nScene description: Neo turns just as Agent Smith levels a gun at his face.\nScene description: Neo screams.\nMORPHEUS: Freeze it.\nScene description: Everything except Morpheus and Neo freezes.\nNEO: This -- this isn't the Matrix?\nMORPHEUS: No, it's another training program\nMORPHEUS: designed to teach you one thing;\nMORPHEUS: if you are not one of us, you're\nMORPHEUS: one of them.\nNEO: What are they?\nMORPHEUS: Sentient programs.  They can move\nMORPHEUS: in and out of any software still\nMORPHEUS: hardwired to their system.  That\nMORPHEUS: means that anyone that we haven't\nMORPHEUS: unplugged is potentially an Agent.\nMORPHEUS: Inside the Matrix, they are\nMORPHEUS: everyone and they are no one.\nScene description: Neo stares at the Agent.\nMORPHEUS: We've survived by hiding from\nMORPHEUS: them, running from them, but they\nMORPHEUS: are the gatekeepers, they're\nMORPHEUS: guarding all the doors, holding\nMORPHEUS: all the keys, which means that\nMORPHEUS: sooner or later someone is going\nMORPHEUS: to have to fight them.\nNEO: Someone?\nMORPHEUS: I won't lie to you, Neo.  Every\nMORPHEUS: single man or woman who has stood\nMORPHEUS: their ground, who has fought an\nMORPHEUS: Agent, has died.  But where they\nMORPHEUS: failed, you will succeed.\nNEO: Why?\nMORPHEUS: I've seen an Agent punch through a\nMORPHEUS: concrete wall.  Men have emptied\nMORPHEUS: entire clips at them and hit\nMORPHEUS: nothing but air.  Yet their\nMORPHEUS: strength and their speed are still\nMORPHEUS: based on a world that is built by\nMORPHEUS: rules.  Because of that they will\nMORPHEUS: never be as strong or as fast as\nMORPHEUS: you can be.\nScene description: Neo scratches his head.\nNEO: What?  Are you trying to tell me\nNEO: that I can dodge bullets?\nMORPHEUS: No, Neo.  I'm trying to tell you\nMORPHEUS: that when you're ready, you won't\nMORPHEUS: have to.\nScene description: Morpheus' cell PHONE RINGS and he flips it open.\nTANK: We got trouble.",
           "metadata": {
             "scene_number": 9,
@@ -173,41 +132,9 @@
             ],
             "page_start": 53,
             "page_end": 55,
-            "_id": "f640852b-7afe-4adb-a319-5525027b8923",
+            "_id": "f0ff5bce-16e4-478a-a994-2d2969edb360",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "f640852b-7afe-4adb-a319-5525027b8923"
-          }
-        },
-        {
-          "id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff",
-          "page_content": "Location: EXT. FETUS FIELDS\nScene description: On the flash, we PULL BACK from the darkness which\nScene description: reveals itself to be the black eye of a fetus.\nMORPHEUS: The Machines discovered a new form\nMORPHEUS: of fusion.  All they needed was a\nMORPHEUS: small electrical charge to\nMORPHEUS: initiate the reaction.\nScene description: The fetus is suspended in a placenta-like husk, where its\nScene description: malleable skull is already growing around the brain-jack.\nMORPHEUS: The human body generates more\nMORPHEUS: bioelectricity than a 120-volt\nMORPHEUS: battery and over 25,000 B.T.U.'s\nMORPHEUS: of body heat.\nScene description: The husk hanging from a stalk is plucked by a thresher-\nScene description: like farm machine.\nMORPHEUS: There are fields, endless fields\nMORPHEUS: where human beings are no longer\nMORPHEUS: born; we are grown.\nScene description: We RISE UP, the field stretching in every direction to\nScene description: the horizon, lightning tearing open the sky as a\nScene description: harvester sweeps past us.",
-          "metadata": {
-            "scene_number": 11,
-            "location": "EXT. FETUS FIELDS",
-            "characters": [
-              "MORPHEUS"
-            ],
-            "page_start": 41,
-            "page_end": 41,
-            "_id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff"
-          }
-        },
-        {
-          "id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d",
-          "page_content": "Location: INT. POWER PLANT\nScene description: From the yawning black of the waste port, we begin to\nScene description: PULL BACK as it snaps shut.\nScene description: Red amniotic gel flows into the pod below us, pooling\nScene description: around a tiny newborn that suckles its feed tube.\nMORPHEUS: For the longest time, I wouldn't\nMORPHEUS: believe it.  But then I saw the\nMORPHEUS: fields with my own eyes, watched\nMORPHEUS: them liquefy the dead so they\nMORPHEUS: could be fed intravenously to the\nMORPHEUS: living and standing there, facing\nMORPHEUS: the efficiency, the pure,\nMORPHEUS: horrifying precision, I came to\nMORPHEUS: realize the obviousness of the\nMORPHEUS: truth.\nScene description: Still PULLING BACK, we see the image of the power plant\nScene description: now on the television as we return to the white space of\nScene description: the construct.\nScene description: 42.",
-          "metadata": {
-            "scene_number": 74,
-            "location": "INT. POWER PLANT",
-            "characters": [
-              "MORPHEUS"
-            ],
-            "page_start": 41,
-            "page_end": 42,
-            "_id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d"
+            "qdrant_id": "f0ff5bce-16e4-478a-a994-2d2969edb360"
           }
         }
       ]
@@ -217,15 +144,17 @@
     "question": "Describe Cypher's personality.",
     "response": {
       "query": "Describe Cypher's personality.",
-      "answer": "Cypher's personality appears to be pragmatic, self-interested, and somewhat cynical. In the scene, he openly admits that he is aware that the steak he is eating does not exist in reality, but he finds comfort in the illusion, saying, 'Ignorance is bliss.' This suggests he values pleasure and comfort over truth, even if it involves deception. Cypher also demonstrates a desire for wealth and importance, expressing a wish to forget the harsh realities and become 'someone important, like an actor.' His willingness to negotiate and his emphasis on personal gain highlight a self-centered and opportunistic nature. Overall, Cypher's attitude shows he prioritizes pleasure, security, and status, even if it means supporting the false reality of the Matrix.",
+      "answer": "Based on the provided context, Cypher's personality can be characterized as self-indulgent, disillusioned, and pragmatic. He exhibits a dislike for the harsh reality of the Matrix, as shown when he says, \"I know that this steak doesn't exist... and I know when I put it in my mouth, the Matrix is telling my brain that it is juicy and delicious,\" implying a preference for ignorance and bliss over truth. His enjoyment of simple pleasures like eating steak and drinking wine further underscores his hedonistic tendencies. Cypher also demonstrates a calculating nature, as he plots with Agent Smith to betray his comrades and regain his luxury-filled life, revealing a pragmatic and somewhat morally flexible personality.",
       "confidence": 0.9,
       "sources_used": [
-        "Scene 76 with Cypher's dinner scene"
+        "Scene 76: INT. RESTAURANT - NIGHT",
+        "Scene 66: INT. META CORTECHS OFFICE",
+        "Scene 61: INT. INTERROGATION ROOM"
       ],
-      "reasoning": "The scene with Cypher eating the steak reveals that he is aware of the illusory nature of his experiences but chooses to indulge in them for comfort, indicating a pragmatic and hedonistic side. His statement, 'Ignorance is bliss,' underscores his desire to avoid harsh truths. Furthermore, his conversation about wanting to be rich and important shows he has ambitions tied to superficial success and recognition, rather than deeper ideals. His willingness to betray others in exchange for personal gains points to a self-interest-driven personality. These clues from his dialogue and actions support a characterization of Cypher as someone who values pleasure, status, and avoiding discomfort, even if it means supporting deception.",
+      "reasoning": "The answer was synthesized from 3 documents retrieved via a qualitative search strategy.",
       "retrieved_documents": [
         {
-          "id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751",
+          "id": "40ebfd41-095e-4eb3-90e4-91127fa8f511",
           "page_content": "Location: INT. RESTAURANT - NIGHT\nScene description: CHAMBER MUSIC and the ambiance of wealth soak the\nScene description: restaurant around us as we watch a serrated knife saw\nScene description: through a thick, gorgeous steak.  The meat is so perfect,\nScene description: charred on the outside, oozing red juice from the inside,\nScene description: that it could be a dream.\nScene description: We hear a voice that we recognize immediately.\nAGENT SMITH: Do we have a deal, Mr. Reagan?\nScene description: A fork stabs the cube of meat and we FOLLOW it UP TO the\nScene description: face of Cypher.\nCYPHER: You know, I know that this steak\nCYPHER: doesn't exist.  I know when I put\nCYPHER: it in my mouth, the Matrix is\nCYPHER: telling my brain that it is juicy\nCYPHER: and delicious.  After nine years,\nCYPHER: do you know what I've realized?\nScene description: He shoves it in, eyes rolling up, savoring the tender\nScene description: beef melting in his mouth.\nCYPHER: Ignorance is bliss.\nScene description: Agent Smith watches him chew the steak loudly, smacking\nScene description: it between his teeth.\nCYPHER: Mmm so, so goddamn good.\nAGENT SMITH: Then we have a deal?\nCYPHER: I don't want to remember nothing.\nCYPHER: Nothing!  You understand?  And I\nCYPHER: want to be rich.  Someone\nCYPHER: important.  Like an actor.  You\nCYPHER: can do that, right?\nAGENT SMITH: Whatever you want, Mr. Reagan.\nScene description: Cypher takes a deep drink of wine.\nCYPHER: All right.  You get my body back\nCYPHER: in a power plant, reinsert me into\nCYPHER: the Matrix and I'll get you what\nCYPHER: you want.\nAGENT SMITH: Access codes to the Zion\nAGENT SMITH: mainframe.\nCYPHER: I told you I don't know them.  But\nCYPHER: I can give you the man who does.\nAGENT SMITH: Morpheus.",
           "metadata": {
             "scene_number": 76,
@@ -236,9 +165,9 @@
             ],
             "page_start": 60,
             "page_end": 61,
-            "_id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751",
+            "_id": "40ebfd41-095e-4eb3-90e4-91127fa8f511",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751"
+            "qdrant_id": "40ebfd41-095e-4eb3-90e4-91127fa8f511"
           }
         },
         {
@@ -259,79 +188,6 @@
           }
         },
         {
-          "id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c",
-          "page_content": "Location: INT. INTERROGATION ROOM\nScene description: CLOSE ON a camera monitor; a wide angle view of a white\nScene description: room where Neo is sitting at a table alone.  We MOVE INTO\nScene description: the monitor, entering the room as if the monitor was a\nScene description: window.\nScene description: At the same moment, the door opens and the Agents enter.\nScene description: Agent Smith sits down across from Neo.  A thick manila\nScene description: envelope slaps down on the table.  The name on the file:\nScene description: \"Anderson, Thomas/nobreakspaceA.\"\nAGENT SMITH: As you can see, we've had our eye\nAGENT SMITH: on you for some time now, Mr.\nAGENT SMITH: Anderson.\nScene description: He opens the file.  Paper rattle marks the silence as he\nScene description: flips several pages.  Neo cannot tell if he is looking at\nScene description: the file or at him.\nAGENT SMITH: It seems that you have been living\nAGENT SMITH: two lives.  In one life, you are\nAGENT SMITH: Thomas A. Anderson, program writer\nAGENT SMITH: for a respectable software\nAGENT SMITH: company.  You have a social\nAGENT SMITH: security number, you pay your\nAGENT SMITH: taxes and you help your landlady\nAGENT SMITH: carry out her garbage.\nScene description: The pages continue to turn.\nAGENT SMITH: The other life is lived in\nAGENT SMITH: computers where you go by the\nAGENT SMITH: hacker alias Neo, and are guilty\nAGENT SMITH: of virtually every computer crime\nAGENT SMITH: we have a law for.\nScene description: Neo feels himself sinking into a pit of shit.\nAGENT SMITH: One of these lives has a future.\nAGENT SMITH: One of them does not.\nScene description: He closes the file.\nAGENT SMITH: I'm going to be as forthcoming as\nAGENT SMITH: I can be, Mr. Anderson.  You are\nAGENT SMITH: here because we need your help.\nScene description: He removes his sunglasses, his eyes are an unnatural ice-\nScene description: blue.\nAGENT SMITH: We know that you have been\nAGENT SMITH: contacted by a certain individual.\nAGENT SMITH: A man who calls himself Morpheus.\nAGENT SMITH: Whatever you think you know about\nAGENT SMITH: this man is irrelevant.  The fact\nAGENT SMITH: is that he is wanted for acts of\nAGENT SMITH: terrorism in more countries than\nAGENT SMITH: any other man in the world.\nScene description: 21.\nAGENT SMITH: He is considered by many\nAGENT SMITH: authorities to be the most\nAGENT SMITH: dangerous man alive.\nScene description: He leans closer.\nAGENT SMITH: My colleagues believe that I am\nAGENT SMITH: wasting my time with you but I\nAGENT SMITH: believe you want to do the right\nAGENT SMITH: thing.  It is obvious that you are\nAGENT SMITH: an intelligent man, Mr. Anderson,\nAGENT SMITH: and that you are interested in the\nAGENT SMITH: future.  That is why I believe you\nAGENT SMITH: are ready to put your past\nAGENT SMITH: mistakes behind you and get on\nAGENT SMITH: with your life.\nScene description: Neo tries to match his stare.\nAGENT SMITH: We are willing to wipe the slate\nAGENT SMITH: clean, to give you a fresh start\nAGENT SMITH: and all we are asking in return is\nAGENT SMITH: your cooperation in bringing a\nAGENT SMITH: known terrorist to justice.\nScene description: Neo nods to himself.\nNEO: Yeah.  Wow.  That sounds like a\nNEO: real good deal.  But I think I\nNEO: have a better one.  How about I\nNEO: just give you the finger --\nScene description: He does.\nNEO: And you give me my phone call!\nScene description: Agent Smith puts his glasses back on.\nAGENT SMITH: You disappoint me, Mr. Anderson.\nNEO: You can't scare me with this\nNEO: Gestapo crap.  I know my rights.\nNEO: I want my phone call!\nScene description: Agent Smith smiles.\nScene description: 22.\nAGENT SMITH: And tell me, Mr. Anderson, what\nAGENT SMITH: good is a phone call if you are\nAGENT SMITH: unable to speak?\nScene description: The question unnerves Neo and strangely he begins to feel\nScene description: the muscles in his jaw tighten.  The standing Agents\nScene description: snicker, watching Neo's confusion grow into panic.\nScene description: Neo feels his lips grow soft and sticky as they slowly\nScene description: seal shut, melding into each other until all traces of\nScene description: his mouth are gone.\nScene description: Wild with fear, he lunges for the door but the Agents\nScene description: restrain him, holding him in the chair.\nAGENT SMITH: You are going to help us, Mr.\nAGENT SMITH: Anderson, whether you want to or\nAGENT SMITH: not.\nScene description: Smith nods and the other two rip open his shirt.  From a\nScene description: case taken out of his suit coat, Smith removes a long,\nScene description: fiber-optic wire tap.\nScene description: Neo struggles helplessly as Smith dangles the wire over\nScene description: his exposed abdomen.  Horrified, he watches as the\nScene description: electronic device animates, becoming an organic creature\nScene description: that resembles a hybrid of an insect and a fluke worm.\nScene description: Thin, whisker-like tendrils reach out and probe into\nScene description: Neo's navel.  He bucks wildly as Smith drops the creature\nScene description: which looks for a moment like an uncut umbilical cord --\nScene description: -- before it begins to burrow, its tail thrashing as it\nScene description: worms its way inside.",
-          "metadata": {
-            "scene_number": 61,
-            "location": "INT. INTERROGATION ROOM",
-            "characters": [
-              "AGENT SMITH",
-              "NEO"
-            ],
-            "page_start": 19,
-            "page_end": 22,
-            "_id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "7cd77d5c-3c50-49f2-bc44-fa6be5c90a5c"
-          }
-        },
-        {
-          "id": "7b69e4ca-075a-4b5b-a674-fa18ed13593a",
-          "page_content": "Location: EXT. CITY STREET - DAY\nScene description: As they get out of the car, Cypher smiles at Neo.\nCYPHER: Like the man says, welcome to the\nCYPHER: real world.\nScene description: Cypher, following the others into the hotel, nervously\nScene description: glances around, wiping the sweat from his forehead.\nScene description: A BUSINESSMAN walks along the sidewalk, wheeling and\nScene description: dealing into his cell phone when it disappears, snatched\nScene description: by Neo as he flashes by.\nMAN: What the shit/nobreakspace-- my phone!\nScene description: The Man turns to call for help and when he turns back, it\nScene description: is Agent Smith.\nScene description: Neo is in a full-out sprint, spinning and weaving away\nScene description: from every pedestrian, every potential Agent.  He flips\nScene description: open the cell phone and dials long distance.\nScene description: Neo dives down an alley, Agent Smith starting to gain.\nNEO: Hurry, Tank!  I got some serious\nNEO: pursuit!",
-          "metadata": {
-            "scene_number": 7,
-            "location": "EXT. CITY STREET - DAY",
-            "characters": [
-              "CYPHER",
-              "MAN",
-              "NEO"
-            ],
-            "page_start": 76,
-            "page_end": 121,
-            "_id": "7b69e4ca-075a-4b5b-a674-fa18ed13593a",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "7b69e4ca-075a-4b5b-a674-fa18ed13593a"
-          }
-        },
-        {
-          "id": "92836997-30ad-426d-a842-ccfc9f23eef3",
-          "page_content": "Location: INT. CAR\nScene description: A large man named APOC is driving.  Beside him is a\nScene description: beautiful androgyne called SWITCH, aiming a large gun at\nScene description: Neo.  WINDOW WIPERS BEAT HEAVILY against the windshield.\nNEO: What the hell is this?!\nTRINITY: It's necessary, Neo.  For our\nTRINITY: protection.\nNEO: From what?\nTRINITY: From you.\nScene description: She lifts a strange steel and glass device that looks\nScene description: like a cross between a rib separator, speculum and air\nScene description: compressor.\nSWITCH: Take off your shirt.\nScene description: He looks at the strange device and the gun still trained\nScene description: on him.\nNEO: What?  Why?\nSWITCH: Stop the car.\nScene description: Apoc does.\nSWITCH: Listen to me, coppertop!  We don't\nSWITCH: have time for 'twenty questions.'\nSWITCH: Right now there is only one rule.\nSWITCH: Our way or the highway.\nNEO: Fine.\nScene description: Neo opens the door.\nTRINITY: Neo, please, you have to trust me.\nNEO: Why?\nTRINITY: Because you've been down there,\nTRINITY: Neo.  You already know that road.\nTRINITY: You know exactly where it ends.\nScene description: Neo stares out into the sheets of rain railing against\nScene description: the dark street beyond the open door.\nTRINITY: And I know that's not where you\nTRINITY: want to be.\nScene description: He closes the door.\nScene description: Neo grudgingly strips off his T-shirt.\nTRINITY: Lie back.\nScene description: Trinity aims the device at Neo, its glass snout forming a\nScene description: seal over his navel.  Switch snaps a cable into the front\nScene description: seat cigarette lighter.\nNEO: What is this thing?\nTRINITY: We think you're bugged.  Try to\nTRINITY: relax.\nScene description: She turns a dial and the machine bears down on Neo's\nScene description: midsection, the cylinder sucking hard at his stomach.\nScene description: Neo screams, squinting in pain as Trinity watches the\nScene description: needle on a pressure gauge climb steadily.\nTRINITY: Come on, come on...\nScene description: On a small monitor that projects an ultrasound-like\nScene description: image, we see Neo's insides begin to slither and churn.\nScene description: He gasps as something wiggles beneath his skin inside his\nScene description: stomach.\nSWITCH: It's on the move.\nTRINITY: Shit.\nSWITCH: You're gonna lose it.\nTRINITY: No I'm not.  Clear.\nScene description: The foreboding word hangs in Neo's ear for a moment when\nScene description: Trinity squeezes a trigger.  Electric current hammers\nScene description: into Neo and rigid convulsions take hold of him beneath\nScene description: the flickering car lamp until --\nScene description: Something finally rockets wetly out of Neo's stomach\nScene description: through the extractor's coils.\nNEO: Jesus Christ!  It's real?!\nNEO: That thing is real?!\nScene description: Trinity lifts a glass cage at the end of the tubing.\nScene description: Inside, the small fluke-like bug flips and squirms, its\nScene description: tendrils flapping against the clear walls.\nScene description: She unrolls the window and dumps it out.\nScene description: Neo sits beside Trinity in the back.  He cannot stop\nScene description: staring as the simple images of the urban street blur\nScene description: past his window like an endless stream of data rushing\nScene description: down a computer screen.\nMORPHEUS: Almost unbelievable, isn't it?\nScene description: Neo nods as the car continues to wind through the crowded\nScene description: city.\nScene description: 65.\nNEO: God...\nTRINITY: What?\nNEO: I used to eat there... Really good\nNEO: noodles...\nScene description: He is speaking in a whisper, almost as if talking to\nScene description: himself.\nNEO: I have these memories, from my\nNEO: entire life but... none of them\nNEO: really happened.\nScene description: He turns to her.\nNEO: What does that mean?\nTRINITY: That the Matrix cannot tell you\nTRINITY: who you are.\nNEO: But an Oracle can.\nTRINITY: That's different.\nNEO: Obviously.\nScene description: He turns to the window for a moment and then turns back.\nNEO: Did you go to her?\nTRINITY: Yes.\nNEO: What did she tell you?\nTRINITY: She told me...\nScene description: She looks at him and suddenly she is unable to speak or\nScene description: even breathe.\nScene description: 66.\nNEO: What?\nScene description: The car suddenly jerks to a stop.\nMORPHEUS: We're here.  Neo, come with me.\nScene description: Neo and Morpheus get out of the car.  Cypher looks into\nScene description: the rearview mirror at Trinity.\nCYPHER: Here we go again, eh, Trin?\nScene description: He smiles as she turns to the window.\nScene description: Neo and Morpheus get in the car.\nMORPHEUS: Let's go.\nScene description: Cypher looks into the rearview mirror at Neo.\nCYPHER: Well, good news or bad news?\nMORPHEUS: Not now, Cypher.\nScene description: Cypher slaps the car in gear and pulls into traffic.\nScene description: Trinity looks at Neo who is staring at the final bit of\nScene description: cookie.  He puts it in his mouth and chews.\nTRINITY: Are you all right?\nNEO: ... Right as rain.",
-          "metadata": {
-            "scene_number": 38,
-            "location": "INT. CAR",
-            "characters": [
-              "CYPHER",
-              "MORPHEUS",
-              "NEO",
-              "SWITCH",
-              "TRINITY"
-            ],
-            "page_start": 24,
-            "page_end": 76,
-            "_id": "92836997-30ad-426d-a842-ccfc9f23eef3",
-            "_collection_name": "matrix_collection",
-            "qdrant_id": "92836997-30ad-426d-a842-ccfc9f23eef3"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "question": "What does Cypher offer to the Agents, and in exchange for what?",
-    "response": {
-      "query": "What does Cypher offer to the Agents, and in exchange for what?",
-      "answer": "Based on the provided script context, Cypher offers to the Agents the ability to help him achieve his goals, which include being rich and important like an actor, and not wanting to remember anything about the Matrix. In exchange, the Agents are willing to give Cypher a powerful position within the system, including access codes to the Zion mainframe through Morpheus, which he claims he can provide by giving them the man who holds these codes. Cypher is effectively trading loyalty and cooperation for personal gain, such as wealth and a new identity removed from his current consciousness.",
-      "confidence": 0.9,
-      "sources_used": [
-        "Scene 61: INT. INTERROGATION ROOM",
-        "Scene 76: INT. RESTAURANT - NIGHT",
-        "Scene 38: INT. CAR",
-        "Scene 9: EXT. CITY STREET - TRAINING PROGRAM - DAY",
-        "Scene 77: INT. ROOM 1313"
-      ],
-      "reasoning": "The answer was synthesized from 5 documents retrieved via a qualitative search strategy.",
-      "retrieved_documents": [
-        {
           "id": "a56e37e3-3a25-41d9-8625-7bffba508073",
           "page_content": "Location: INT. INTERROGATION ROOM\nScene description: CLOSE ON a camera monitor; a wide angle view of a white\nScene description: room where Neo is sitting at a table alone.  We MOVE INTO\nScene description: the monitor, entering the room as if the monitor was a\nScene description: window.\nScene description: At the same moment, the door opens and the Agents enter.\nScene description: Agent Smith sits down across from Neo.  A thick manila\nScene description: envelope slaps down on the table.  The name on the file:\nScene description: \"Anderson, Thomas/nobreakspaceA.\"\nAGENT SMITH: As you can see, we've had our eye\nAGENT SMITH: on you for some time now, Mr.\nAGENT SMITH: Anderson.\nScene description: He opens the file.  Paper rattle marks the silence as he\nScene description: flips several pages.  Neo cannot tell if he is looking at\nScene description: the file or at him.\nAGENT SMITH: It seems that you have been living\nAGENT SMITH: two lives.  In one life, you are\nAGENT SMITH: Thomas A. Anderson, program writer\nAGENT SMITH: for a respectable software\nAGENT SMITH: company.  You have a social\nAGENT SMITH: security number, you pay your\nAGENT SMITH: taxes and you help your landlady\nAGENT SMITH: carry out her garbage.\nScene description: The pages continue to turn.\nAGENT SMITH: The other life is lived in\nAGENT SMITH: computers where you go by the\nAGENT SMITH: hacker alias Neo, and are guilty\nAGENT SMITH: of virtually every computer crime\nAGENT SMITH: we have a law for.\nScene description: Neo feels himself sinking into a pit of shit.\nAGENT SMITH: One of these lives has a future.\nAGENT SMITH: One of them does not.\nScene description: He closes the file.\nAGENT SMITH: I'm going to be as forthcoming as\nAGENT SMITH: I can be, Mr. Anderson.  You are\nAGENT SMITH: here because we need your help.\nScene description: He removes his sunglasses, his eyes are an unnatural ice-\nScene description: blue.\nAGENT SMITH: We know that you have been\nAGENT SMITH: contacted by a certain individual.\nAGENT SMITH: A man who calls himself Morpheus.\nAGENT SMITH: Whatever you think you know about\nAGENT SMITH: this man is irrelevant.  The fact\nAGENT SMITH: is that he is wanted for acts of\nAGENT SMITH: terrorism in more countries than\nAGENT SMITH: any other man in the world.\nScene description: 21.\nAGENT SMITH: He is considered by many\nAGENT SMITH: authorities to be the most\nAGENT SMITH: dangerous man alive.\nScene description: He leans closer.\nAGENT SMITH: My colleagues believe that I am\nAGENT SMITH: wasting my time with you but I\nAGENT SMITH: believe you want to do the right\nAGENT SMITH: thing.  It is obvious that you are\nAGENT SMITH: an intelligent man, Mr. Anderson,\nAGENT SMITH: and that you are interested in the\nAGENT SMITH: future.  That is why I believe you\nAGENT SMITH: are ready to put your past\nAGENT SMITH: mistakes behind you and get on\nAGENT SMITH: with your life.\nScene description: Neo tries to match his stare.\nAGENT SMITH: We are willing to wipe the slate\nAGENT SMITH: clean, to give you a fresh start\nAGENT SMITH: and all we are asking in return is\nAGENT SMITH: your cooperation in bringing a\nAGENT SMITH: known terrorist to justice.\nScene description: Neo nods to himself.\nNEO: Yeah.  Wow.  That sounds like a\nNEO: real good deal.  But I think I\nNEO: have a better one.  How about I\nNEO: just give you the finger --\nScene description: He does.\nNEO: And you give me my phone call!\nScene description: Agent Smith puts his glasses back on.\nAGENT SMITH: You disappoint me, Mr. Anderson.\nNEO: You can't scare me with this\nNEO: Gestapo crap.  I know my rights.\nNEO: I want my phone call!\nScene description: Agent Smith smiles.\nScene description: 22.\nAGENT SMITH: And tell me, Mr. Anderson, what\nAGENT SMITH: good is a phone call if you are\nAGENT SMITH: unable to speak?\nScene description: The question unnerves Neo and strangely he begins to feel\nScene description: the muscles in his jaw tighten.  The standing Agents\nScene description: snicker, watching Neo's confusion grow into panic.\nScene description: Neo feels his lips grow soft and sticky as they slowly\nScene description: seal shut, melding into each other until all traces of\nScene description: his mouth are gone.\nScene description: Wild with fear, he lunges for the door but the Agents\nScene description: restrain him, holding him in the chair.\nAGENT SMITH: You are going to help us, Mr.\nAGENT SMITH: Anderson, whether you want to or\nAGENT SMITH: not.\nScene description: Smith nods and the other two rip open his shirt.  From a\nScene description: case taken out of his suit coat, Smith removes a long,\nScene description: fiber-optic wire tap.\nScene description: Neo struggles helplessly as Smith dangles the wire over\nScene description: his exposed abdomen.  Horrified, he watches as the\nScene description: electronic device animates, becoming an organic creature\nScene description: that resembles a hybrid of an insect and a fluke worm.\nScene description: Thin, whisker-like tendrils reach out and probe into\nScene description: Neo's navel.  He bucks wildly as Smith drops the creature\nScene description: which looks for a moment like an uncut umbilical cord --\nScene description: -- before it begins to burrow, its tail thrashing as it\nScene description: worms its way inside.",
           "metadata": {
@@ -347,9 +203,40 @@
             "_collection_name": "matrix_collection",
             "qdrant_id": "a56e37e3-3a25-41d9-8625-7bffba508073"
           }
+        }
+      ]
+    }
+  },
+  {
+    "question": "What does Cypher offer to the Agents, and in exchange for what?",
+    "response": {
+      "query": "What does Cypher offer to the Agents, and in exchange for what?",
+      "answer": "Cypher offers to betray his fellow rebels and provide information to the Agents, specifically mentioning that he can give them the man who has access codes to Zion's mainframe, Morpheus. In exchange, he explicitly states that he wants to forget everything about the Matrix, wishing to remain ignorant of the truth, and also desires to be rich and important, like an actor. This indicates that Cypher is willing to sacrifice loyalty and the truth for personal gain and a superficial life.",
+      "confidence": 0.9,
+      "sources_used": [
+        "Document Scene 76"
+      ],
+      "reasoning": "The answer was synthesized from 3 documents retrieved via a qualitative search strategy.",
+      "retrieved_documents": [
+        {
+          "id": "0e3511c2-6166-49b4-ae83-611d2f02ce6b",
+          "page_content": "Location: INT. INTERROGATION ROOM\nScene description: CLOSE ON a camera monitor; a wide angle view of a white\nScene description: room where Neo is sitting at a table alone.  We MOVE INTO\nScene description: the monitor, entering the room as if the monitor was a\nScene description: window.\nScene description: At the same moment, the door opens and the Agents enter.\nScene description: Agent Smith sits down across from Neo.  A thick manila\nScene description: envelope slaps down on the table.  The name on the file:\nScene description: \"Anderson, Thomas/nobreakspaceA.\"\nAGENT SMITH: As you can see, we've had our eye\nAGENT SMITH: on you for some time now, Mr.\nAGENT SMITH: Anderson.\nScene description: He opens the file.  Paper rattle marks the silence as he\nScene description: flips several pages.  Neo cannot tell if he is looking at\nScene description: the file or at him.\nAGENT SMITH: It seems that you have been living\nAGENT SMITH: two lives.  In one life, you are\nAGENT SMITH: Thomas A. Anderson, program writer\nAGENT SMITH: for a respectable software\nAGENT SMITH: company.  You have a social\nAGENT SMITH: security number, you pay your\nAGENT SMITH: taxes and you help your landlady\nAGENT SMITH: carry out her garbage.\nScene description: The pages continue to turn.\nAGENT SMITH: The other life is lived in\nAGENT SMITH: computers where you go by the\nAGENT SMITH: hacker alias Neo, and are guilty\nAGENT SMITH: of virtually every computer crime\nAGENT SMITH: we have a law for.\nScene description: Neo feels himself sinking into a pit of shit.\nAGENT SMITH: One of these lives has a future.\nAGENT SMITH: One of them does not.\nScene description: He closes the file.\nAGENT SMITH: I'm going to be as forthcoming as\nAGENT SMITH: I can be, Mr. Anderson.  You are\nAGENT SMITH: here because we need your help.\nScene description: He removes his sunglasses, his eyes are an unnatural ice-\nScene description: blue.\nAGENT SMITH: We know that you have been\nAGENT SMITH: contacted by a certain individual.\nAGENT SMITH: A man who calls himself Morpheus.\nAGENT SMITH: Whatever you think you know about\nAGENT SMITH: this man is irrelevant.  The fact\nAGENT SMITH: is that he is wanted for acts of\nAGENT SMITH: terrorism in more countries than\nAGENT SMITH: any other man in the world.\nScene description: 21.\nAGENT SMITH: He is considered by many\nAGENT SMITH: authorities to be the most\nAGENT SMITH: dangerous man alive.\nScene description: He leans closer.\nAGENT SMITH: My colleagues believe that I am\nAGENT SMITH: wasting my time with you but I\nAGENT SMITH: believe you want to do the right\nAGENT SMITH: thing.  It is obvious that you are\nAGENT SMITH: an intelligent man, Mr. Anderson,\nAGENT SMITH: and that you are interested in the\nAGENT SMITH: future.  That is why I believe you\nAGENT SMITH: are ready to put your past\nAGENT SMITH: mistakes behind you and get on\nAGENT SMITH: with your life.\nScene description: Neo tries to match his stare.\nAGENT SMITH: We are willing to wipe the slate\nAGENT SMITH: clean, to give you a fresh start\nAGENT SMITH: and all we are asking in return is\nAGENT SMITH: your cooperation in bringing a\nAGENT SMITH: known terrorist to justice.\nScene description: Neo nods to himself.\nNEO: Yeah.  Wow.  That sounds like a\nNEO: real good deal.  But I think I\nNEO: have a better one.  How about I\nNEO: just give you the finger --\nScene description: He does.\nNEO: And you give me my phone call!\nScene description: Agent Smith puts his glasses back on.\nAGENT SMITH: You disappoint me, Mr. Anderson.\nNEO: You can't scare me with this\nNEO: Gestapo crap.  I know my rights.\nNEO: I want my phone call!\nScene description: Agent Smith smiles.\nScene description: 22.\nAGENT SMITH: And tell me, Mr. Anderson, what\nAGENT SMITH: good is a phone call if you are\nAGENT SMITH: unable to speak?\nScene description: The question unnerves Neo and strangely he begins to feel\nScene description: the muscles in his jaw tighten.  The standing Agents\nScene description: snicker, watching Neo's confusion grow into panic.\nScene description: Neo feels his lips grow soft and sticky as they slowly\nScene description: seal shut, melding into each other until all traces of\nScene description: his mouth are gone.\nScene description: Wild with fear, he lunges for the door but the Agents\nScene description: restrain him, holding him in the chair.\nAGENT SMITH: You are going to help us, Mr.\nAGENT SMITH: Anderson, whether you want to or\nAGENT SMITH: not.\nScene description: Smith nods and the other two rip open his shirt.  From a\nScene description: case taken out of his suit coat, Smith removes a long,\nScene description: fiber-optic wire tap.\nScene description: Neo struggles helplessly as Smith dangles the wire over\nScene description: his exposed abdomen.  Horrified, he watches as the\nScene description: electronic device animates, becoming an organic creature\nScene description: that resembles a hybrid of an insect and a fluke worm.\nScene description: Thin, whisker-like tendrils reach out and probe into\nScene description: Neo's navel.  He bucks wildly as Smith drops the creature\nScene description: which looks for a moment like an uncut umbilical cord --\nScene description: -- before it begins to burrow, its tail thrashing as it\nScene description: worms its way inside.",
+          "metadata": {
+            "scene_number": 61,
+            "location": "INT. INTERROGATION ROOM",
+            "characters": [
+              "AGENT SMITH",
+              "NEO"
+            ],
+            "page_start": 19,
+            "page_end": 22,
+            "_id": "0e3511c2-6166-49b4-ae83-611d2f02ce6b",
+            "_collection_name": "matrix_collection",
+            "qdrant_id": "0e3511c2-6166-49b4-ae83-611d2f02ce6b"
+          }
         },
         {
-          "id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751",
+          "id": "40ebfd41-095e-4eb3-90e4-91127fa8f511",
           "page_content": "Location: INT. RESTAURANT - NIGHT\nScene description: CHAMBER MUSIC and the ambiance of wealth soak the\nScene description: restaurant around us as we watch a serrated knife saw\nScene description: through a thick, gorgeous steak.  The meat is so perfect,\nScene description: charred on the outside, oozing red juice from the inside,\nScene description: that it could be a dream.\nScene description: We hear a voice that we recognize immediately.\nAGENT SMITH: Do we have a deal, Mr. Reagan?\nScene description: A fork stabs the cube of meat and we FOLLOW it UP TO the\nScene description: face of Cypher.\nCYPHER: You know, I know that this steak\nCYPHER: doesn't exist.  I know when I put\nCYPHER: it in my mouth, the Matrix is\nCYPHER: telling my brain that it is juicy\nCYPHER: and delicious.  After nine years,\nCYPHER: do you know what I've realized?\nScene description: He shoves it in, eyes rolling up, savoring the tender\nScene description: beef melting in his mouth.\nCYPHER: Ignorance is bliss.\nScene description: Agent Smith watches him chew the steak loudly, smacking\nScene description: it between his teeth.\nCYPHER: Mmm so, so goddamn good.\nAGENT SMITH: Then we have a deal?\nCYPHER: I don't want to remember nothing.\nCYPHER: Nothing!  You understand?  And I\nCYPHER: want to be rich.  Someone\nCYPHER: important.  Like an actor.  You\nCYPHER: can do that, right?\nAGENT SMITH: Whatever you want, Mr. Reagan.\nScene description: Cypher takes a deep drink of wine.\nCYPHER: All right.  You get my body back\nCYPHER: in a power plant, reinsert me into\nCYPHER: the Matrix and I'll get you what\nCYPHER: you want.\nAGENT SMITH: Access codes to the Zion\nAGENT SMITH: mainframe.\nCYPHER: I told you I don't know them.  But\nCYPHER: I can give you the man who does.\nAGENT SMITH: Morpheus.",
           "metadata": {
             "scene_number": 76,
@@ -360,13 +247,13 @@
             ],
             "page_start": 60,
             "page_end": 61,
-            "_id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751",
+            "_id": "40ebfd41-095e-4eb3-90e4-91127fa8f511",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "8a6cc3a2-e70a-4a6f-8a1a-84bf5a868751"
+            "qdrant_id": "40ebfd41-095e-4eb3-90e4-91127fa8f511"
           }
         },
         {
-          "id": "92836997-30ad-426d-a842-ccfc9f23eef3",
+          "id": "966ee17c-60bc-474e-9852-0f34bac1dbb4",
           "page_content": "Location: INT. CAR\nScene description: A large man named APOC is driving.  Beside him is a\nScene description: beautiful androgyne called SWITCH, aiming a large gun at\nScene description: Neo.  WINDOW WIPERS BEAT HEAVILY against the windshield.\nNEO: What the hell is this?!\nTRINITY: It's necessary, Neo.  For our\nTRINITY: protection.\nNEO: From what?\nTRINITY: From you.\nScene description: She lifts a strange steel and glass device that looks\nScene description: like a cross between a rib separator, speculum and air\nScene description: compressor.\nSWITCH: Take off your shirt.\nScene description: He looks at the strange device and the gun still trained\nScene description: on him.\nNEO: What?  Why?\nSWITCH: Stop the car.\nScene description: Apoc does.\nSWITCH: Listen to me, coppertop!  We don't\nSWITCH: have time for 'twenty questions.'\nSWITCH: Right now there is only one rule.\nSWITCH: Our way or the highway.\nNEO: Fine.\nScene description: Neo opens the door.\nTRINITY: Neo, please, you have to trust me.\nNEO: Why?\nTRINITY: Because you've been down there,\nTRINITY: Neo.  You already know that road.\nTRINITY: You know exactly where it ends.\nScene description: Neo stares out into the sheets of rain railing against\nScene description: the dark street beyond the open door.\nTRINITY: And I know that's not where you\nTRINITY: want to be.\nScene description: He closes the door.\nScene description: Neo grudgingly strips off his T-shirt.\nTRINITY: Lie back.\nScene description: Trinity aims the device at Neo, its glass snout forming a\nScene description: seal over his navel.  Switch snaps a cable into the front\nScene description: seat cigarette lighter.\nNEO: What is this thing?\nTRINITY: We think you're bugged.  Try to\nTRINITY: relax.\nScene description: She turns a dial and the machine bears down on Neo's\nScene description: midsection, the cylinder sucking hard at his stomach.\nScene description: Neo screams, squinting in pain as Trinity watches the\nScene description: needle on a pressure gauge climb steadily.\nTRINITY: Come on, come on...\nScene description: On a small monitor that projects an ultrasound-like\nScene description: image, we see Neo's insides begin to slither and churn.\nScene description: He gasps as something wiggles beneath his skin inside his\nScene description: stomach.\nSWITCH: It's on the move.\nTRINITY: Shit.\nSWITCH: You're gonna lose it.\nTRINITY: No I'm not.  Clear.\nScene description: The foreboding word hangs in Neo's ear for a moment when\nScene description: Trinity squeezes a trigger.  Electric current hammers\nScene description: into Neo and rigid convulsions take hold of him beneath\nScene description: the flickering car lamp until --\nScene description: Something finally rockets wetly out of Neo's stomach\nScene description: through the extractor's coils.\nNEO: Jesus Christ!  It's real?!\nNEO: That thing is real?!\nScene description: Trinity lifts a glass cage at the end of the tubing.\nScene description: Inside, the small fluke-like bug flips and squirms, its\nScene description: tendrils flapping against the clear walls.\nScene description: She unrolls the window and dumps it out.\nScene description: Neo sits beside Trinity in the back.  He cannot stop\nScene description: staring as the simple images of the urban street blur\nScene description: past his window like an endless stream of data rushing\nScene description: down a computer screen.\nMORPHEUS: Almost unbelievable, isn't it?\nScene description: Neo nods as the car continues to wind through the crowded\nScene description: city.\nScene description: 65.\nNEO: God...\nTRINITY: What?\nNEO: I used to eat there... Really good\nNEO: noodles...\nScene description: He is speaking in a whisper, almost as if talking to\nScene description: himself.\nNEO: I have these memories, from my\nNEO: entire life but... none of them\nNEO: really happened.\nScene description: He turns to her.\nNEO: What does that mean?\nTRINITY: That the Matrix cannot tell you\nTRINITY: who you are.\nNEO: But an Oracle can.\nTRINITY: That's different.\nNEO: Obviously.\nScene description: He turns to the window for a moment and then turns back.\nNEO: Did you go to her?\nTRINITY: Yes.\nNEO: What did she tell you?\nTRINITY: She told me...\nScene description: She looks at him and suddenly she is unable to speak or\nScene description: even breathe.\nScene description: 66.\nNEO: What?\nScene description: The car suddenly jerks to a stop.\nMORPHEUS: We're here.  Neo, come with me.\nScene description: Neo and Morpheus get out of the car.  Cypher looks into\nScene description: the rearview mirror at Trinity.\nCYPHER: Here we go again, eh, Trin?\nScene description: He smiles as she turns to the window.\nScene description: Neo and Morpheus get in the car.\nMORPHEUS: Let's go.\nScene description: Cypher looks into the rearview mirror at Neo.\nCYPHER: Well, good news or bad news?\nMORPHEUS: Not now, Cypher.\nScene description: Cypher slaps the car in gear and pulls into traffic.\nScene description: Trinity looks at Neo who is staring at the final bit of\nScene description: cookie.  He puts it in his mouth and chews.\nTRINITY: Are you all right?\nNEO: ... Right as rain.",
           "metadata": {
             "scene_number": 38,
@@ -380,44 +267,71 @@
             ],
             "page_start": 24,
             "page_end": 76,
-            "_id": "92836997-30ad-426d-a842-ccfc9f23eef3",
+            "_id": "966ee17c-60bc-474e-9852-0f34bac1dbb4",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "92836997-30ad-426d-a842-ccfc9f23eef3"
+            "qdrant_id": "966ee17c-60bc-474e-9852-0f34bac1dbb4"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": "What is the purpose of the human fields, and who created them?",
+    "response": {
+      "query": "What is the purpose of the human fields, and who created them?",
+      "answer": "The human fields depicted in the script serve as sites where human beings are grown and harvested by the Machines, rather than born. Morpheus describes these fields as places 'where human beings are no longer born; we are grown,' indicating their purpose is to cultivate humans for the Machines' use. The fields are used to produce human bioelectricity, as Morpheus explains, 'The Machines discovered a new form of fusion,' and they create a reaction initiated by a small electrical charge, harnessing the human body's bioelectricity and heat. The creation of these fields appears to be the Machines' deliberate effort to sustain their energy needs by cultivating humans as a resource.",
+      "confidence": 0.9,
+      "sources_used": [
+        "Scene 11: EXT. FETUS FIELDS",
+        "Scene 75: INT. POWER PLANT - CLOSE ON MAN'S BODY",
+        "Scene 74: INT. POWER PLANT"
+      ],
+      "reasoning": "The answer was synthesized from 3 documents retrieved via a qualitative search strategy.",
+      "retrieved_documents": [
+        {
+          "id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff",
+          "page_content": "Location: EXT. FETUS FIELDS\nScene description: On the flash, we PULL BACK from the darkness which\nScene description: reveals itself to be the black eye of a fetus.\nMORPHEUS: The Machines discovered a new form\nMORPHEUS: of fusion.  All they needed was a\nMORPHEUS: small electrical charge to\nMORPHEUS: initiate the reaction.\nScene description: The fetus is suspended in a placenta-like husk, where its\nScene description: malleable skull is already growing around the brain-jack.\nMORPHEUS: The human body generates more\nMORPHEUS: bioelectricity than a 120-volt\nMORPHEUS: battery and over 25,000 B.T.U.'s\nMORPHEUS: of body heat.\nScene description: The husk hanging from a stalk is plucked by a thresher-\nScene description: like farm machine.\nMORPHEUS: There are fields, endless fields\nMORPHEUS: where human beings are no longer\nMORPHEUS: born; we are grown.\nScene description: We RISE UP, the field stretching in every direction to\nScene description: the horizon, lightning tearing open the sky as a\nScene description: harvester sweeps past us.",
+          "metadata": {
+            "scene_number": 11,
+            "location": "EXT. FETUS FIELDS",
+            "characters": [
+              "MORPHEUS"
+            ],
+            "page_start": 41,
+            "page_end": 41,
+            "_id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff",
+            "_collection_name": "matrix_collection",
+            "qdrant_id": "e79ff846-ccab-4294-ac02-c45e8d0a8eff"
           }
         },
         {
-          "id": "f640852b-7afe-4adb-a319-5525027b8923",
-          "page_content": "Location: EXT. CITY STREET - TRAINING PROGRAM - DAY\nScene description: Morpheus moves effortlessly through a crowded downtown\nScene description: street while Neo struggles to keep up, constantly bumped\nScene description: and shouldered off the path.\nMORPHEUS: The Matrix is a system, Neo, and\nMORPHEUS: that system is our enemy.  But\nMORPHEUS: when you are inside and you look\nMORPHEUS: around, what do you see;\nMORPHEUS: businessmen, lawyers, teachers,\nMORPHEUS: carpenters.  The minds of the very\nMORPHEUS: people we are trying to save.  But\nMORPHEUS: until we do, these people are\nMORPHEUS: still a part of the system and\nMORPHEUS: that makes them our enemy.\nScene description: A cop writing a parking ticket stares at Neo from behind\nScene description: his sunglasses.\nMORPHEUS: You have to understand that most\nMORPHEUS: of these people are not ready to\nMORPHEUS: be unplugged and many of them are\nMORPHEUS: so inured, so hopelessly dependent\nMORPHEUS: on the system that they will fight\nMORPHEUS: to protect it.\nScene description: A beautiful woman in a red dress smiles at Neo as she\nScene description: passes by.\nMORPHEUS: Were you listening to me, Neo?  Or\nMORPHEUS: were you looking at the woman in\nMORPHEUS: the red dress?\nNEO: I was...\nScene description: 54.\nMORPHEUS: Look again.\nScene description: Neo turns just as Agent Smith levels a gun at his face.\nScene description: Neo screams.\nMORPHEUS: Freeze it.\nScene description: Everything except Morpheus and Neo freezes.\nNEO: This -- this isn't the Matrix?\nMORPHEUS: No, it's another training program\nMORPHEUS: designed to teach you one thing;\nMORPHEUS: if you are not one of us, you're\nMORPHEUS: one of them.\nNEO: What are they?\nMORPHEUS: Sentient programs.  They can move\nMORPHEUS: in and out of any software still\nMORPHEUS: hardwired to their system.  That\nMORPHEUS: means that anyone that we haven't\nMORPHEUS: unplugged is potentially an Agent.\nMORPHEUS: Inside the Matrix, they are\nMORPHEUS: everyone and they are no one.\nScene description: Neo stares at the Agent.\nMORPHEUS: We've survived by hiding from\nMORPHEUS: them, running from them, but they\nMORPHEUS: are the gatekeepers, they're\nMORPHEUS: guarding all the doors, holding\nMORPHEUS: all the keys, which means that\nMORPHEUS: sooner or later someone is going\nMORPHEUS: to have to fight them.\nNEO: Someone?\nMORPHEUS: I won't lie to you, Neo.  Every\nMORPHEUS: single man or woman who has stood\nMORPHEUS: their ground, who has fought an\nMORPHEUS: Agent, has died.  But where they\nMORPHEUS: failed, you will succeed.\nNEO: Why?\nMORPHEUS: I've seen an Agent punch through a\nMORPHEUS: concrete wall.  Men have emptied\nMORPHEUS: entire clips at them and hit\nMORPHEUS: nothing but air.  Yet their\nMORPHEUS: strength and their speed are still\nMORPHEUS: based on a world that is built by\nMORPHEUS: rules.  Because of that they will\nMORPHEUS: never be as strong or as fast as\nMORPHEUS: you can be.\nScene description: Neo scratches his head.\nNEO: What?  Are you trying to tell me\nNEO: that I can dodge bullets?\nMORPHEUS: No, Neo.  I'm trying to tell you\nMORPHEUS: that when you're ready, you won't\nMORPHEUS: have to.\nScene description: Morpheus' cell PHONE RINGS and he flips it open.\nTANK: We got trouble.",
+          "id": "396af88c-d0da-4d9f-93c7-5352306a8ca4",
+          "page_content": "Location: INT. POWER PLANT - CLOSE ON MAN'S BODY\nScene description: floating in a magenta amnion.\nScene description: His body spasms, fighting against the thick gelatin.\nScene description: Metal tubes, surreal versions of hospital tubes, obscure\nScene description: his face.  Other lines like IVs are connected to limbs\nScene description: and cover his genitals.\nScene description: He is struggling desperately now.  Air bubbles into the\nScene description: Jell-O but does not break the surface.  Pressing up, the\nScene description: surface distends, stretching like a red rubber cocoon.\nScene description: Unable to breathe, he fights wildly to stand, clawing at\nScene description: the thinning elastic shroud, until it ruptures, a hole\nScene description: widening around his mouth as he sucks for air.  Tearing\nScene description: himself free, he emerges from the cell.\nScene description: It is Neo.\nScene description: He is bald and naked, his body slick with gelatin.\nScene description: Dizzy, nauseous, he waits for his vision to focus.\nScene description: He is standing in an oval capsule of clear alloy filled\nScene description: with magenta gelatin, the surface of which has solidified\nScene description: like curdled milk.  The IVs in his arms are plugged into\nScene description: outlets that appear to be grafted to his flesh.\nScene description: He feels the weight of another cable and reaches to the\nScene description: back of his head where he finds an enormous coaxial\nScene description: plugged and locked into the base of his skull.  He tries\nScene description: to pull it out but it would be easier to pull off a\nScene description: finger.\nScene description: To either side he sees other tube-shaped pods filled with\nScene description: magenta gelatin; beneath the wax-like surface, pale and\nScene description: motionless, he sees other human beings.\nScene description: Fanning out in a circle, there are more.  All connected\nScene description: to a center core, each capsule like a red, dimly-glowing\nScene description: petal attached to a black metal stem.\nScene description: Above him, level after level, the stem rises seemingly\nScene description: forever.  He moves to the foot of the capsule and looks\nScene description: out.  The image assaults his mind.\nScene description: Towers of glowing petals spiral up to incomprehensible\nScene description: heights, disappearing down into a dim murk like an\nScene description: underwater abyss.\nScene description: His sight is blurred and warped, exaggerating the\nScene description: intensity of the vision.  The sound of the plant is like\nScene description: the sound of the ocean heard from inside the belly of\nScene description: Leviathan.\nScene description: 34.\nScene description: From above, a machine drops directly in front of Neo.  He\nScene description: swallows his scream as it seems to stare at him.  It is\nScene description: almost insect-like in its design; beautiful housings of\nScene description: alloyed metal covering organic-like systems of hard and\nScene description: soft polymers.\nScene description: The machine seizes hold of Neo, paralyzing him as the\nScene description: cable lock at the back of his neck spins and opens.\nScene description: The cable disengages itself.  A long, clear plastic\nScene description: needle and cerebrum-chip slides from the anterior of\nScene description: Neo's skull with an ooze of blood and spinal fluid.  The\nScene description: other connective hoses snap free and snake away as the\nScene description: machine lets Neo go.\nScene description: Suddenly, the back of the unit opens and a tremendous\nScene description: vacuum, like an airplane door opening, sucks the gelatin\nScene description: and then Neo into a black hole.",
           "metadata": {
-            "scene_number": 9,
-            "location": "EXT. CITY STREET - TRAINING PROGRAM - DAY",
-            "characters": [
-              "MORPHEUS",
-              "NEO",
-              "TANK"
-            ],
-            "page_start": 53,
-            "page_end": 55,
-            "_id": "f640852b-7afe-4adb-a319-5525027b8923",
+            "scene_number": 75,
+            "location": "INT. POWER PLANT - CLOSE ON MAN'S BODY",
+            "characters": [],
+            "page_start": 32,
+            "page_end": 34,
+            "_id": "396af88c-d0da-4d9f-93c7-5352306a8ca4",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "f640852b-7afe-4adb-a319-5525027b8923"
+            "qdrant_id": "396af88c-d0da-4d9f-93c7-5352306a8ca4"
           }
         },
         {
-          "id": "452172ec-3895-4f23-81ad-a420b4016789",
-          "page_content": "Location: INT. ROOM 1313\nScene description: Across the room, a DARK FIGURE stares out the tall\nScene description: windows veiled with decaying lace.  He turns and his\nScene description: smile lights up the room.  A dull ROAR of THUNDER shakes\nScene description: the old building.\nMORPHEUS: At last.\nScene description: He wears a long black coat and his eyes are invisible\nScene description: behind circular mirrored glasses.  He strides to Neo and\nScene description: they shake hands.\nMORPHEUS: Welcome, Neo.  As you no doubt\nMORPHEUS: have guessed, I am Morpheus.\nNEO: It's an honor.\nMORPHEUS: No, the honor is mine.  Please.\nMORPHEUS: Come.  Sit.\nScene description: He nods to Trinity and she exits through a door to an\nScene description: adjacent room.  They sit across from one another in\nScene description: cracked, burgundy-leather chairs.\nMORPHEUS: I imagine, right now, you must be\nMORPHEUS: feeling a bit like Alice, tumbling\nMORPHEUS: down the rabbit hole?\nNEO: You could say that.\nMORPHEUS: I can see it in your eyes.  You\nMORPHEUS: have the look of a man who accepts\nMORPHEUS: what he sees because he is\nMORPHEUS: expecting to wake up.\nScene description: A smile, razor-thin, curls the corner of his lips.\nScene description: 28.\nMORPHEUS: Ironically, this is not far from\nMORPHEUS: the truth.  But I'm getting ahead\nMORPHEUS: of myself.  Can you tell me, Neo,\nMORPHEUS: why are you here?\nNEO: You're Morpheus.  You're a legend.\nNEO: Most hackers would die to meet\nNEO: you.\nMORPHEUS: Yes.  Thank you.  But I think we\nMORPHEUS: both know there's more to it than\nMORPHEUS: that.  Do you believe in fate,\nMORPHEUS: Neo?\nNEO: No.\nMORPHEUS: Why not?\nNEO: Because I don't like the idea that\nNEO: I'm not in control of my life.\nMORPHEUS: I know exactly what you mean.\nScene description: Again, that smile that could cut glass.\nMORPHEUS: Let me tell you why you are here.\nMORPHEUS: You have come because you know\nMORPHEUS: something.  What you know you\nMORPHEUS: can't explain but you feel it.\nMORPHEUS: You've felt it your whole life,\nMORPHEUS: felt that something is wrong with\nMORPHEUS: the world.  You don't know what,\nMORPHEUS: but it's there like a splinter in\nMORPHEUS: your mind, driving you mad.  It is\nMORPHEUS: this feeling that brought you to\nMORPHEUS: me.  Do you know what I'm talking\nMORPHEUS: about?\nNEO: The Matrix?\nMORPHEUS: Do you want to know what it is?\nScene description: Neo swallows hard and nods.\nScene description: 29.\nMORPHEUS: The Matrix is everywhere, it's all\nMORPHEUS: around us, here even in this room.\nMORPHEUS: You can see it out your window or\nMORPHEUS: on your television.  You feel it\nMORPHEUS: when you go to work, or go to\nMORPHEUS: church or pay your taxes.  It is\nMORPHEUS: the world that has been pulled\nMORPHEUS: over your eyes to blind you from\nMORPHEUS: the truth.\nNEO: What truth?\nMORPHEUS: That you are a slave, Neo.  Like\nMORPHEUS: everyone else, you were born into\nMORPHEUS: bondage, kept inside a prison that\nMORPHEUS: you cannot smell, taste, or touch.\nMORPHEUS: A prison for your mind.\nScene description: The LEATHER CREAKS as he leans back.\nMORPHEUS: Unfortunately, no one can be told\nMORPHEUS: what the Matrix is.  You have to\nMORPHEUS: see it for yourself.\nScene description: Morpheus opens his hands.  In the right is a red pill.\nScene description: In the left, a blue pill.\nMORPHEUS: This is your last chance.  After\nMORPHEUS: this, there is no going back.  You\nMORPHEUS: take the blue pill and the story\nMORPHEUS: ends.  You wake in your bed and\nMORPHEUS: you believe whatever you want to\nMORPHEUS: believe.\nScene description: The pills in his open hands are reflected in the glasses.\nMORPHEUS: You take the red pill and you stay\nMORPHEUS: in Wonderland and I show you how\nMORPHEUS: deep the rabbit-hole goes.\nScene description: Neo feels the smooth skin of the capsules, the moisture\nScene description: growing in his palms.\nMORPHEUS: Remember that all I am offering is\nMORPHEUS: the truth.  Nothing more.\nScene description: Neo opens his mouth and swallows the red pill.  The\nScene description: Cheshire smile returns.\nMORPHEUS: Follow me.",
+          "id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d",
+          "page_content": "Location: INT. POWER PLANT\nScene description: From the yawning black of the waste port, we begin to\nScene description: PULL BACK as it snaps shut.\nScene description: Red amniotic gel flows into the pod below us, pooling\nScene description: around a tiny newborn that suckles its feed tube.\nMORPHEUS: For the longest time, I wouldn't\nMORPHEUS: believe it.  But then I saw the\nMORPHEUS: fields with my own eyes, watched\nMORPHEUS: them liquefy the dead so they\nMORPHEUS: could be fed intravenously to the\nMORPHEUS: living and standing there, facing\nMORPHEUS: the efficiency, the pure,\nMORPHEUS: horrifying precision, I came to\nMORPHEUS: realize the obviousness of the\nMORPHEUS: truth.\nScene description: Still PULLING BACK, we see the image of the power plant\nScene description: now on the television as we return to the white space of\nScene description: the construct.\nScene description: 42.",
           "metadata": {
-            "scene_number": 77,
-            "location": "INT. ROOM 1313",
+            "scene_number": 74,
+            "location": "INT. POWER PLANT",
             "characters": [
-              "MORPHEUS",
-              "NEO"
+              "MORPHEUS"
             ],
-            "page_start": 27,
-            "page_end": 30,
-            "_id": "452172ec-3895-4f23-81ad-a420b4016789",
+            "page_start": 41,
+            "page_end": 42,
+            "_id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d",
             "_collection_name": "matrix_collection",
-            "qdrant_id": "452172ec-3895-4f23-81ad-a420b4016789"
+            "qdrant_id": "d1dc65c5-1296-4894-a059-9dc62edf3e6d"
           }
         }
       ]

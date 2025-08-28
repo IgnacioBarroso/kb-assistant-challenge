@@ -13,6 +13,11 @@ from pydantic_ai import Agent
 class FilteredContext(BaseModel):
     relevant_sentences: List[str] = Field(description="A list of exact sentences from the context that directly answer or are relevant to the user's query.")
 
+class QuantitativeAnalysis(BaseModel):
+    """Modelo para la salida del agente de conteo."""
+    final_count: int = Field(description="The final total count of occurrences based on the evidence.")
+    evidence: List[str] = Field(default_factory=list, description="A list of direct quotes from the context that serve as evidence for the count.")
+
 class CountingExtraction(BaseModel):
     character: Optional[str] = Field(None, description="The character speaking or mentioned, if any.")
     keywords: List[str] = Field(description="The specific keywords, phrases, or objects to count.")
@@ -54,6 +59,12 @@ class MatrixGeneratorService(GeneratorService):
             system_prompt="You are an AI text filter. Your job is to read a large context and extract only the exact sentences that are directly relevant to the user's query. Do not paraphrase, do not answer the query, just extract the verbatim sentences."
         )
 
+        self.counting_agent = Agent(
+            model_name,
+            output_type=QuantitativeAnalysis,
+            system_prompt=self._get_quantitative_analysis_prompt()
+        )
+
     async def generate_response(self, query: str, context: list) -> MatrixResponse:
         normalized_context = self._normalize_context(context)
         query_type = self._get_query_type(query)
@@ -82,18 +93,29 @@ class MatrixGeneratorService(GeneratorService):
 
         prompt = f"User Query: '{query}'\n\nScript Context:\n{self._format_context(context)}"
         
-        counting_agent = Agent(
-            self.model_name,
-            output_type=MatrixResponse,
-            system_prompt=self._get_counting_system_prompt()
+        # 1. Usar el agente de conteo para obtener datos estructurados
+        analysis_result = await self.counting_agent.run(prompt)
+        analysis_output = analysis_result.output
+
+        # 2. Construir la respuesta para el usuario en Python (más robusto)
+        if analysis_output.final_count > 0:
+            evidence_list = "\n".join(f"- \"{e}\"" for e in analysis_output.evidence)
+            answer = (
+                f"Based on the provided context, the final count is {analysis_output.final_count}. Here is the evidence:\n"
+                f"{evidence_list}"
+            )
+        else:
+            answer = "Based on the provided context, there are 0 occurrences."
+
+        reasoning = f"A specialized counting agent analyzed {len(context)} pre-filtered script scenes to find the occurrences."
+
+        # 3. Construir y devolver el objeto MatrixResponse final
+        return MatrixResponse(
+            query=query,
+            answer=answer,
+            confidence=1.0, # La confianza es alta porque el proceso es determinístico post-análisis
+            reasoning=reasoning
         )
-        result = await counting_agent.run(prompt)
-        output = result.output
-        
-        if not output.reasoning:
-            output.reasoning = f"A specialized counting agent analyzed {len(context)} pre-filtered script scenes to find the occurrences."
-        
-        return output
 
     def _get_query_type(self, query: str) -> str:
         query_lower = query.lower()
@@ -133,15 +155,17 @@ class MatrixGeneratorService(GeneratorService):
 5.  **Schema Adherence:** You MUST populate all fields of the `MatrixResponse` model. The `answer` should be a complete paragraph. The `reasoning` should explain your conclusion. The `confidence` score (from 0.0 to 1.0) is ALWAYS REQUIRED and reflects how well the context supports your answer.
 """
 
-    def _get_counting_system_prompt(self) -> str:
-        """Prompt altamente directivo para el agente de conteo."""
-        return """You are a meticulous and precise counting machine. Your ONLY purpose is to analyze the provided script excerpts and count occurrences based on the user's query. You must follow these rules without deviation.
+    def _get_quantitative_analysis_prompt(self) -> str:
+        """Prompt para el agente que solo cuenta y extrae evidencia."""
+        return """You are a meticulous and precise counting machine. Your ONLY purpose is to analyze the provided script excerpts and count occurrences based on the user's query.
 
 **OPERATIONAL DIRECTIVES:**
 1.  **Identify Target:** Read the user query to understand exactly what to count.
-2.  **List All Evidence First:** Before the final count, you MUST create a bulleted list of every single instance found in the context. Each bullet point must contain a direct quote of the sentence where the item was found.
-3.  **State Final Count:** After the evidence list, provide the final summary. It MUST be in the format: "Based on the provided context, the final count is X."
-4.  **Handle Zero Occurrences:** If no instances are found, your answer MUST be: "Based on the provided context, there are 0 occurrences."
-5.  **Final Answer Structure:** The `answer` field of your response MUST contain BOTH the bulleted list of evidence AND the final count summary.
-6.  **Confidence Score:** The `confidence` field is MANDATORY. Set it to 1.0 if you can perform the count (even if the result is 0). Set it to 0.5 if the context is ambiguous.
+2.  **Scan Context:** Scrutinize the provided script context to find every single instance of the target.
+3.  **Extract Evidence:** For each instance found, extract the exact sentence as a direct quote.
+4.  **Final Count:** Calculate the total number of instances found.
+5.  **Populate Schema:** You MUST populate the `QuantitativeAnalysis` model.
+    - `evidence`: A list containing all the direct quotes you found.
+    - `final_count`: The total number of items in the evidence list.
+6.  **Handle Zero Occurrences:** If no instances are found, return `final_count: 0` and an empty `evidence` list.
 """
